@@ -1,21 +1,3 @@
-const aboutUsObj = {
-    name: '关于我们',
-    backgroundColor: '#FFF',
-    title: [
-        {
-            text: '关于',
-            color: '#333'
-        }, {
-            text: '我们',
-            color: '#333'
-        }
-    ],
-    subTitle: {
-        text: 'WHO WE ARE',
-        color: '#555555'
-    },
-    idName: 'aboutUs-anchor'
-};
 
 const serviceObj = {
     name: '提供服务',
@@ -130,5 +112,23 @@ const contactUsObj = {
     },
     idName: 'contactUs-anchor'
 };
+const aboutUsObj = {
+    name: '关于我们',
+    backgroundColor: '#FFF',
+    title: [
+        {
+            text: '关于',
+            color: '#333'
+        }, {
+            text: '我们',
+            color: '#333'
+        }
+    ],
+    subTitle: {
+        text: 'WHO WE ARE',
+        color: '#555555'
+    },
+    idName: 'aboutUs-anchor'
+};
 
-export { aboutUsObj, serviceObj, introObj, worksObj, teamObj, joinUsObj, contactUsObj };
+export {serviceObj, introObj, worksObj, teamObj, joinUsObj, contactUsObj, aboutUsObj };

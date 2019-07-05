@@ -10,12 +10,12 @@
         mu-drawer( right v-bind:open="open" v-bind:docked="docked" @close="toggle()" )
             mu-list( @itemClick="docked ? '' : toggle()" )
                 mu-list-item( title="HOME"     @click="toId( 'HOME-anchor' )" )
-                mu-list-item( title="关于我们"  @click="toId( 'aboutUs-anchor' )" )
                 mu-list-item( title="提供服务"  @click="toId( 'service-anchor' )" )
                 mu-list-item( title="服务简介"  @click="toId( 'intro-anchor' )" )
                 mu-list-item( title="行业方案"  @click="toId( 'works-anchor' )" )
                 mu-list-item( title="团队介绍"  @click="toId( 'team-anchor' )" )
                 mu-list-item( title="招贤纳士"  @click="toId( 'joinUs-anchor' )" )
+                mu-list-item( title="关于我们"  @click="toId( 'aboutUs-anchor' )" )
                 mu-list-item( title="联系我们"  @click="toId( 'contactUs-anchor' )" )
                 mu-list-item( v-if="docked"    @click.native="open = false" title="Close" )
     .pc-header( id="pc--header" )
@@ -32,12 +32,12 @@
                     mu-paper
                         mu-bottom-nav( v-bind:value="bottomNav" @change="handleChange" )
                             mu-bottom-nav-item( value="HOME-anchor"         title="HOME"       )
-                            mu-bottom-nav-item( value="aboutUs-anchor"      title="关于我们"    )
                             mu-bottom-nav-item( value="service-anchor"      title="提供服务"    )
                             mu-bottom-nav-item( value="intro-anchor"        title="服务简介"    )
                             mu-bottom-nav-item( value="works-anchor"        title="行业方案"    )
                             mu-bottom-nav-item( value="team-anchor"         title="团队介绍"    )
                             mu-bottom-nav-item( value="joinUs-anchor"       title="招贤纳士"    )
+                            mu-bottom-nav-item( value="aboutUs-anchor"      title="关于我们"    )
                             mu-bottom-nav-item( value="contactUs-anchor"    title="联系我们"    )
 </template>
 
