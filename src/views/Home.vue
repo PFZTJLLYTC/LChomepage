@@ -15,9 +15,6 @@
     .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="teamModule" )
         Team
-    .moduleBox( v-bind:style="{  backgroundImage: 'url( ' + joinUsModule.bgImg + ' )', backgroundSize: 'cover'  }" )
-        TitleBox( v-bind:titleInfo="joinUsModule" )
-        JoinUs
     .moduleBox( v-bind:style="{ backgroundColor: aboutUsModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="aboutUsModule" )
         AboutUs
@@ -40,10 +37,9 @@ import Server       from '../components/Home/Service'           // 提供服务
 import Intro        from '../components/Home/Intro'             // 服务简介
 import Works        from '../components/Home/Works'             // 行业方案
 import Team         from '../components/Home/Team'              // 团队介绍
-import JoinUs       from '../components/Home/JoinUs'            // 招贤纳士
 
-import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, joinUsObj, contactUsObj }    from '../assets/script/module/Home'
-const components = { TitleBox, AppBar, Banner, MapView, ContactUs,Server, Intro, Works, Team, AboutUs,  JoinUs }
+import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, contactUsObj }    from '../assets/script/module/Home'
+const components = { TitleBox, AppBar, Banner, MapView, ContactUs,Server, Intro, Works, Team, AboutUs }
 
 export default {
     name: 'Home',
@@ -53,7 +49,6 @@ export default {
             introModule: introObj,
             worksModule: worksObj,
             teamModule: teamObj ,
-            joinUsModule: joinUsObj,
             aboutUsModule: aboutUsObj,
             contactUsModule: contactUsObj
         }

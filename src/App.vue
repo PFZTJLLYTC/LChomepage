@@ -47,12 +47,18 @@ export default {
                             this.cacheMethodsState( '行业方案', 4 )
                         } else if( yValue>=2600 && yValue<4900 ) {
                             this.cacheMethodsState( '团队介绍', 5 )
-                        } else if( yValue>=4900 && yValue<5800 ) {
+                        } /*删除招贤纳士
+                        else if( yValue>=4900 && yValue<5800 ) {
                             this.cacheMethodsState( '招贤纳士', 6 )
                         } else if( yValue>=5800 && yValue<7300 ) {
                             this.cacheMethodsState( '关于我们', 7 )
                         } else if( yValue>=7300 ) {
                             this.cacheMethodsState( '联系我们', 8 )
+                        }*/
+                        else if( yValue>=4900 && yValue<5800 ) {
+                            this.cacheMethodsState( '关于我们', 6 )
+                        } else if( yValue>=5800) {
+                            this.cacheMethodsState( '联系我们', 7 )
                         }
                     }
                     mobileAppbar.setAttribute( 'class', 'mu-appbar mu-paper-1 moveViewStyle' )

@@ -14,7 +14,6 @@
                 mu-list-item( title="服务简介"  @click="toId( 'intro-anchor' )" )
                 mu-list-item( title="行业方案"  @click="toId( 'works-anchor' )" )
                 mu-list-item( title="团队介绍"  @click="toId( 'team-anchor' )" )
-                mu-list-item( title="招贤纳士"  @click="toId( 'joinUs-anchor' )" )
                 mu-list-item( title="关于我们"  @click="toId( 'aboutUs-anchor' )" )
                 mu-list-item( title="联系我们"  @click="toId( 'contactUs-anchor' )" )
                 mu-list-item( v-if="docked"    @click.native="open = false" title="Close" )
@@ -36,7 +35,6 @@
                             mu-bottom-nav-item( value="intro-anchor"        title="服务简介"    )
                             mu-bottom-nav-item( value="works-anchor"        title="行业方案"    )
                             mu-bottom-nav-item( value="team-anchor"         title="团队介绍"    )
-                            mu-bottom-nav-item( value="joinUs-anchor"       title="招贤纳士"    )
                             mu-bottom-nav-item( value="aboutUs-anchor"      title="关于我们"    )
                             mu-bottom-nav-item( value="contactUs-anchor"    title="联系我们"    )
 </template>
