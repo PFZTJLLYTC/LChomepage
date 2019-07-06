@@ -21,7 +21,6 @@
     .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="contactUsModule" )
         ContactUs
-    MapView
 </template>
 
 <script>
@@ -29,7 +28,6 @@ import TitleBox     from '../components/common/TitleBox'        // 标题
 
 import AppBar       from '../components/Home/AppBar'            // AppBar顶部导航
 import Banner       from '../components/Home/Banner'            // Banner组件
-import MapView      from '../components/Home/MapView'           // 地图组件
 import ContactUs    from '../components/Home/ContactUs'         // 联系我们
 
 import AboutUs      from '../components/Home/AboutUs'           // 关于我们
@@ -39,7 +37,7 @@ import Works        from '../components/Home/Works'             // 行业方案
 import Team         from '../components/Home/Team'              // 团队介绍
 
 import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, contactUsObj }    from '../assets/script/module/Home'
-const components = { TitleBox, AppBar, Banner, MapView, ContactUs,Server, Intro, Works, Team, AboutUs }
+const components = { TitleBox, AppBar, Banner, ContactUs,Server, Intro, Works, Team, AboutUs }
 
 export default {
     name: 'Home',

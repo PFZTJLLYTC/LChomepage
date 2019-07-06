@@ -1,7 +1,7 @@
 <template lang="pug">
 #ContactUs
     mu-row( gutter )
-        mu-col( 
+        mu-col(
             v-for="item in contactUsArr" v-bind:key="item.iconName"
             class="contactUS--box mediaQuery--contactUs--info"
             width="100" tablet="100" desktop="33"
@@ -15,17 +15,17 @@
 export default {
     data() {
         return {
-            formTitle: `如果您想咨询相关的定制开发业务，或者实地考察，更加直观的了解我们到产品和公司实力，可以发送留言或直接拨打热线电话。`,
+           /* formTitle: `如果您想咨询相关服务，或者亲身体验，更加直观的了解我们的产品，可以查看Github。`,*/
             contactUsArr: [
                 {
-                    iconName: 'call',
-                    info: '0532-83861532'
+                    iconName: 'public',
+                    info: 'https://github.com/PFZTJLLYTC'
                 }, {
-                    iconName: 'email',
-                    info: 'aplusoffice@forevercj.com'
+                    iconName: 'group',
+                    info: '公众号：连城出行'
                 }, {
-                    iconName: 'map',
-                    info: '山东省青岛市市南区华润大厦B座2408室'
+                    iconName: 'place',
+                    info: '上海市普陀区中山北路3663号（华东师范大学）'
                 }
             ],
             input                      : '',
@@ -58,7 +58,7 @@ export default {
 
 .mediaQuery--contactUs--info
     @media only screen and ( min-width : 320px )
-        .contactUS--text 
+        .contactUS--text
             +REM( padding-bottom, $M-contentMargin )
             >i
                 +REM( font-size, $F-sub-bigTitle )
