@@ -1,10 +1,10 @@
 <template lang="pug">
 .banner( v-bind:style=" { backgroundImage: 'url( ' + bannerBcImg + ' )', backgroundSize: 'cover' } " )
     .banner--title
-        h2.whileColor 城际行车固定线路的
-        h2.themeColor 服务与管理系统
-        p.whileColor 连城管理系统 · 多领域应用产品
-        p.whileColor 满足不同用户需求 · 解决方案与服务提供商
+        h2.whileColor 为城际服务提供集成化
+        h2.themeColor 管理平台
+        p.whileColor 多线路入驻与集成化 · 服务横向拓展
+        p.whileColor 便民出行 · 更简化管理
 </template>
 
 <script>

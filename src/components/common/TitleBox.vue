@@ -22,7 +22,7 @@ export default {
 .title
     +flexCenter
     +textCenter
-    +REM( padding-top, $M-padding*3 ) // 方便锚点跳到指定位置, 加高padding-top
+    +REM( padding-top, $M-padding*3 ) /* 方便锚点跳到指定位置, 加高padding-top*/
     +REM( padding-bottom, $M-padding )
     >div
         +W100
@@ -44,7 +44,7 @@ export default {
                 +REM( font-size, $F-text )
                 +REM( margin-top, $M-contentMargin )
                 +REM( margin-bottom, $M-contentMargin )
-// 容器媒体查询( PC情况下 ) 设置最大宽度
+/* 容器媒体查询( PC情况下 ) 设置最大宽度*/
 .title
     @media only screen and ( min-width : 1180px )
         .warp--title

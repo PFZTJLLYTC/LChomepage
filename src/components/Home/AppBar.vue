@@ -5,13 +5,13 @@
             .logoImg( slot="left" )
                 img( src="../../assets/img/icon150x150.png" )
             .mu-appbar-title
-                span.mobile--title 连城管理系统
+                span.mobile--title 连城
             mu-icon-button( icon='menu' class="mobile--btn" slot="right" @click="toggle( true )" )
         mu-drawer( right v-bind:open="open" v-bind:docked="docked" @close="toggle()" )
             mu-list( @itemClick="docked ? '' : toggle()" )
                 mu-list-item( title="HOME"     @click="toId( 'HOME-anchor' )" )
                 mu-list-item( title="提供服务"  @click="toId( 'service-anchor' )" )
-                mu-list-item( title="服务简介"  @click="toId( 'intro-anchor' )" )
+                mu-list-item( title="服务获取"  @click="toId( 'intro-anchor' )" )
                 mu-list-item( title="行业方案"  @click="toId( 'works-anchor' )" )
                 mu-list-item( title="团队介绍"  @click="toId( 'team-anchor' )" )
                 mu-list-item( title="关于我们"  @click="toId( 'aboutUs-anchor' )" )
@@ -25,7 +25,7 @@
                     .logoImg
                         img( src="../../assets/img/icon150x150.png" )
                     .mu-appbar-title
-                        span.mobile--title 连城管理系统
+                        span.mobile--title 连城
                 // PC - 右侧
                 mu-col( class="pc--header--box" desktop="60" )
                     mu-paper

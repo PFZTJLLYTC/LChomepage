@@ -15,7 +15,7 @@ export default {
     data() {
         return {
             contentInfo: {
-                title: '连城管理系统',
+                title: '连城',
                 textArr:   [
                     {
                         text: `在万物互联的互联网的时代，人们的出行方式与网络联系得更为密切，市面上的出行应用如春笋般涌现，但是几乎没有一款应用是针对固定线路出行提供服务的。

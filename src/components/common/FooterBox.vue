@@ -1,6 +1,6 @@
 <template lang="pug">
     .footer
-        p © 连城管理系统 2019
+        p © 连城 2019
 </template>
 
 <style lang="sass?indentedSyntax" scoped>
