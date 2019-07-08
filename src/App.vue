@@ -40,7 +40,7 @@ export default {
                     if( viewUrlState === 'Home' ) {
                         // 判断 滚动值的范围( 修正距离: 不比分要触碰顶部时 进行切换; 减400px )
                         if( yValue>=1000 && yValue<1300 ) {
-                            this.cacheMethodsState( '提供服务', 2 )
+                            this.cacheMethodsState( '获取服务', 2 )
                         } else if( yValue>=1300 && yValue<2100 ) {
                             this.cacheMethodsState( '服务简介', 3 )
                         } else if( yValue>=2100 && yValue<2600 ) {

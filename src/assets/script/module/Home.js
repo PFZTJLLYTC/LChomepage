@@ -1,10 +1,10 @@
 
 const serviceObj = {
-    name: '提供服务',
+    name: '获取服务',
     backgroundColor: '#F5F5F5',
     title: [
         {
-            text: '提供',
+            text: '获取',
             color: '#333'
         }, {
             text: '服务',
