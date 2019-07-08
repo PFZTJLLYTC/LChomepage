@@ -39,6 +39,7 @@ export default {
                     // 判断页面状态: 如果是 'Home' -> 执行 首页导航滚动监听事件
                     if( viewUrlState === 'Home' ) {
                         // 判断 滚动值的范围( 修正距离: 不比分要触碰顶部时 进行切换; 减400px )
+                        //暂时未修改
                         if( yValue>=1000 && yValue<1300 ) {
                             this.cacheMethodsState( '获取服务', 2 )
                         } else if( yValue>=1300 && yValue<2100 ) {

@@ -3,18 +3,12 @@
 #Home
     AppBar
     Banner
-    .moduleBox( v-bind:style="{ backgroundColor: serviceModule.backgroundColor }" )
-        TitleBox( v-bind:titleInfo="serviceModule" )
-        Server
     .moduleBox( v-bind:style="{ backgroundColor: introModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="introModule" )
         Intro
-    .moduleBox( v-bind:style="{ backgroundColor: worksModule.backgroundColor }" )
-        TitleBox( v-bind:titleInfo="worksModule" )
-        Works
-    .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
-        TitleBox( v-bind:titleInfo="teamModule" )
-        Team
+    .moduleBox( v-bind:style="{ backgroundColor: serviceModule.backgroundColor }" )
+        TitleBox( v-bind:titleInfo="serviceModule" )
+        Server
     .moduleBox( v-bind:style="{ backgroundColor: aboutUsModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="aboutUsModule" )
         AboutUs
@@ -33,11 +27,9 @@ import ContactUs    from '../components/Home/ContactUs'         // 联系我们
 import AboutUs      from '../components/Home/AboutUs'           // 关于我们
 import Server       from '../components/Home/Service'           // 提供服务
 import Intro        from '../components/Home/Intro'             // 服务简介
-import Works        from '../components/Home/Works'             // 行业方案
-import Team         from '../components/Home/Team'              // 团队介绍
 
 import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, contactUsObj }    from '../assets/script/module/Home'
-const components = { TitleBox, AppBar, Banner, ContactUs,Server, Intro, Works, Team, AboutUs }
+const components = { TitleBox, AppBar, Banner, ContactUs,Server, Intro, AboutUs }
 
 export default {
     name: 'Home',

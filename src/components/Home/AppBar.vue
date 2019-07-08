@@ -10,10 +10,8 @@
         mu-drawer( right v-bind:open="open" v-bind:docked="docked" @close="toggle()" )
             mu-list( @itemClick="docked ? '' : toggle()" )
                 mu-list-item( title="HOME"     @click="toId( 'HOME-anchor' )" )
+                mu-list-item( title="服务简介"  @click="toId( 'intro-anchor' )" )
                 mu-list-item( title="获取服务"  @click="toId( 'service-anchor' )" )
-                mu-list-item( title="服务获取"  @click="toId( 'intro-anchor' )" )
-                mu-list-item( title="行业方案"  @click="toId( 'works-anchor' )" )
-                mu-list-item( title="团队介绍"  @click="toId( 'team-anchor' )" )
                 mu-list-item( title="关于我们"  @click="toId( 'aboutUs-anchor' )" )
                 mu-list-item( title="联系我们"  @click="toId( 'contactUs-anchor' )" )
                 mu-list-item( v-if="docked"    @click.native="open = false" title="Close" )
@@ -31,10 +29,8 @@
                     mu-paper
                         mu-bottom-nav( v-bind:value="bottomNav" @change="handleChange" )
                             mu-bottom-nav-item( value="HOME-anchor"         title="HOME"       )
-                            mu-bottom-nav-item( value="service-anchor"      title="获取服务"    )
                             mu-bottom-nav-item( value="intro-anchor"        title="服务简介"    )
-                            mu-bottom-nav-item( value="works-anchor"        title="行业方案"    )
-                            mu-bottom-nav-item( value="team-anchor"         title="团队介绍"    )
+                            mu-bottom-nav-item( value="service-anchor"      title="获取服务"    )
                             mu-bottom-nav-item( value="aboutUs-anchor"      title="关于我们"    )
                             mu-bottom-nav-item( value="contactUs-anchor"    title="联系我们"    )
 </template>
@@ -117,13 +113,13 @@ export default {
                 +global-maxWidth
                 padding: 0 !important
                 .pc--header--box
-                    width: 50%
+                    width: 39%
                     >div
                         +dib
                     .logoImg
-                        +w-h( 60px, 60px )
+                        +w-h( 50px, 50px )
                         >img
-                            +imgCover( 100% )
+                            +imgCover( 95% )
                     .mu-appbar-title
                         +fS( 20px )
                         +REM-padding-LR( $M-contentMargin )
