@@ -18,7 +18,7 @@ export default {
            /* formTitle: `如果您想咨询相关服务，或者亲身体验，更加直观的了解我们的产品，可以查看Github。`,*/
             contactUsArr: [
                 {
-                    iconName: 'public',
+                    iconName: 'mail',
                     info: 'liancheng.a.2019@gmail.com'
                 }, {
                     iconName: 'group',

@@ -36,7 +36,7 @@ export default {
             serviceArr: [
                 {
                     //这里图片修改！
-                    img     : require('../../assets/img/ico-tool-30-px@3x.png'),
+                    img     : require('../../assets/img/yonghu.png'),
                     title   : '用户入口',
                     url     : 'Application',
                     textArr: [
@@ -49,7 +49,7 @@ export default {
                         }
                     ]
                 }, {
-                    img     : require('../../assets/img/ico-software-30-px@3x.png'),
+                    img     : require('../../assets/img/comiis_siji.png'),
                     title   : '司机入口',
                     url     : 'BigData',
                     textArr: [
@@ -62,7 +62,7 @@ export default {
                         }
                     ]
                 }, {
-                    img     : require('../../assets/img/ico-manager-30-px@3x.png'),
+                    img     : require('../../assets/img/guanliyuan.png'),
                     title   : '管理员入口',
                     url     : 'ECommerce',
                     textArr: [
@@ -75,7 +75,7 @@ export default {
                         }
                     ]
                 }, {
-                    img     : require('../../assets/img/ico-software-30-px@3x.png'),
+                    img     : require('../../assets/img/hezuohuoban.png'),
                     title   : '其他合作',
                     url     : 'SystemIntegration',
                     textArr: [
