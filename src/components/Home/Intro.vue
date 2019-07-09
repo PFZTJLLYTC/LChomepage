@@ -49,11 +49,6 @@ export default {
                     leftBorderColor: `#67B5C2`,                             // 标题 左边框颜色
                     itemArr : [                                             // 单独服务类型的细分数组
                         {
-                            iconImg     : require('../../assets/img/ico-windows-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : 'Windows'
-                        }, {
                             iconImg     : require('../../assets/img/ico-iphone-140-px@3x.png'),
                             row         : "25%",
                             rowClass    : 'row4',
@@ -71,39 +66,24 @@ export default {
                         }
                     ]
                 }, {
-                    titleName   : `企业应用`,
+                    titleName   : `管理端应用`,
                     iconName    : "laptop_mac",
                     tabName     : "Enterprise",
                     leftBorderColor: `#67B5C2`,                             // 标题 左边框颜色
                     itemArr : [
                         {
-                            iconImg     : require('../../assets/img/ico-e-r-p-140-px@3x.png'),
-                            row         : "20%",
-                            rowClass    : 'row5',
-                            itemTitle   : 'ERP系统'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-o-a-140-px@3x.png'),
-                            row         : "20%",
-                            rowClass    : 'row5',
-                            itemTitle   : 'OA系统'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-c-r-m-140-px@3x.png'),
-                            row         : "20%",
-                            rowClass    : 'row5',
-                            itemTitle   : 'CRM'
+                            iconImg     : require('../../assets/img/ico-windows-140-px@3x.png'),
+                            row         : "25%",
+                            rowClass    : 'row4',
+                            itemTitle   : 'Windows'
                         }, {
                             iconImg     : require('../../assets/img/ico-w-e-b-s-i-t-e-140-px@3x.png'),
-                            row         : "20%",
+                            row         : "25%",
                             rowClass    : 'row5',
                             itemTitle   : '大型门户'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-wechat-140-px@3x.png'),
-                            row         : "20%",
-                            rowClass    : 'row5',
-                            itemTitle   : '微信'
                         }
                     ]
-                }, {
+                }, /*{
                     titleName   : `电商系统`,
                     iconName    : "local_grocery_store",
                     tabName     : "ECommerce",
@@ -126,34 +106,19 @@ export default {
                             itemTitle   : '微商城'
                         }
                     ]
-                }, {
+                }, */{
                 //之前"行业方案"的内容
-                    titleName   : `系统集成`,
+                    titleName   : `消息与升级`,
                     iconName    : "settings",
                     tabName     : "system",
                     leftBorderColor: `#67B5C2`,                             // 标题 左边框颜色
                     itemArr : [
                         {
-                            iconImg     : require('../../assets/img/ico-140-px@3x.png'),
+                            iconImg     : require('../../assets/img/ico-wechat-140-px@3x.png'),
                             row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : '溯源'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-barcode-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : '防伪'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-card-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : '一卡通'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-card-140-px-copy@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : '巡检'
-                        }
+                            rowClass    : 'row5',
+                            itemTitle   : '微信推送'
+                        },
                     ]
                 }
             ],worksBoxArr: [
@@ -161,24 +126,20 @@ export default {
                     imgLeft     : true,
                     itemColor   : '#67B5C2',
                     itemImgSrc  : require('../../assets/img/works_2.png'),
-                    itemTitle   : `艾迦办公官方网站`,
-                    itemText    : `艾迦办公是一家专注于为各类企业提供中高端办公室租赁
-                                    及配套服务的互联网平台，通过线上初步选房-线下核定房源-陪同看房-撮合交易这一流程，
-                                    为客户提供最有效的租房服务。`
+                    itemTitle   : `连城App`,
+                    itemText    : `连城App是连城服务的客户端，用户和司机通过此App进行订单的上传和接收。联系更加方便且分配灵活。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#6574BB',
                     itemImgSrc  : require('../../assets/img/works_5.png'),
-                    itemTitle   : `欢乐颂H5办公租赁平台`,
-                    itemText    : `长江中心“欢乐颂创意办公空间”是岛城首家互联网创意办公空间，旨在引领本土白领生态办公新模式，
-                                    打造微租赁、短时租赁新地标。`
+                    itemTitle   : `连城服务`,
+                    itemText    : `连城服务一直在探索更加便民的服务方式，所以总是在升级，您的支持将让我们更加努力。:)`
                 }, {
                     imgLeft     : true,
                     itemColor   : '#343A48',
                     itemImgSrc  : require('../../assets/img/works_3.png'),
-                    itemTitle   : `艾迦办公APP客户端`,
-                    itemText    : `艾迦办公是一家专注于为各类企业提供中高端办公室租赁及配套服务的互联网平台，
-                                    通过线上初步选房-线下核定房源-陪同看房-撮合交易这一流程，为客户提供最有效的租房服务。`
+                    itemTitle   : `连城管理系统`,
+                    itemText    : `方便线路管理人的管理端，提供多项操作，准确管理订单和司机，并且提供统计数据和司机绩效，让管理人更加方便业务处理。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#6574BB',
