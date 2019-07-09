@@ -5,7 +5,7 @@
     .mobile-header
         mu-appbar#mobile--appbar( class="" )
             .logoImg( slot="left" )
-                img( src="../../assets/img/logo-shangchao-dark-44-px@3x.png" )
+                img( src="../../assets/img/icon150x150.png" )
             .mu-appbar-title
                 span.mobile--title 连城
             mu-icon-button( icon='home' class="mobile--btn" slot="right" @click="callbackHome()" )
@@ -16,7 +16,7 @@
                 // PC - 左侧
                 mu-col.pc--header--box( desktop="50" )
                     .logoImg
-                        img( src="../../assets/img/logo-shangchao-dark-44-px@3x.png" )
+                        img( src="../../assets/img/icon150x150.png" )
                     .mu-appbar-title
                         span.mobile--title 连城
                 // PC - 右侧

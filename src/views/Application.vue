@@ -17,48 +17,6 @@
                 .moduleBox__info
                     h3 {{ item.title }}
                     p {{ item.subTitle }}
-    // 开发技术
-    .moduleBox( v-bind:style="{ backgroundColor: fourPlatformModule.backgroundColor }" )
-        TitleBox( v-bind:titleInfo="fourPlatformModule" )
-        mu-row.moduleBox__content( gutter )
-            mu-col(
-                v-for="item in fourPlatformModule.contentInfo" v-bind:key="item.title"
-                class="mediaQuery--fourPlatformModule fourPlatformModule"
-                width="50" tablet="50" desktop="25"
-                v-bind:style="{ backgroundColor: item.bColor, textAlign: 'center' }"
-            )
-                .moduleBox__iconImg
-                    img( v-bind:src="item.iconImg" v-bind:style="{ width: '30%' }" )
-                .moduleBox__info
-                    h3 {{ item.title }}
-    // 六大服务优势
-    .moduleBox( v-bind:style="{ backgroundColor: sixAdvantageModule.backgroundColor }" )
-        TitleBox( v-bind:titleInfo="sixAdvantageModule" )
-        mu-row.moduleBox__content( gutter class="mediaQuery--sixAdvantageModule" )
-            mu-col(
-                v-for="item in sixAdvantageModule.contentInfo" v-bind:key="item.title"
-                class="sixAdvantageModule"
-                width="100" tablet="50" desktop="33"
-            )
-                .moduleBox__iconImg
-                    img( v-bind:src="item.iconImg" )
-                .moduleBox__info
-                    h3 {{ item.title }}
-                    p {{ item.subTitle }}
-    // 二十大行业解决方案
-    .moduleBox( v-bind:style="{ backgroundColor: twentySolutionModule.backgroundColor }" )
-        TitleBox( v-bind:titleInfo="twentySolutionModule" )
-        mu-row.moduleBox__content( gutter class="mediaQuery--twentySolutionModule" )
-            mu-col(
-                v-for="item in twentySolutionModule.contentInfo" v-bind:key="item.title"
-                class="twentySolutionModule"
-                width="33" tablet="33" desktop="20"
-            )
-                .moduleBox__iconImg
-                    img( v-bind:src="item.iconImg" v-bind:style="{ width: '30%' }" )
-                .moduleBox__info
-                    h3 {{ item.title }}
-
 </template>
 
 <script>
@@ -75,10 +33,10 @@ export default {
         return {
             // 传递给 Banner组件( 通用 )的数据
             bannerInfo: {
-                bgImg: require('../assets/img/application-bgbanner.jpg'),
+                bgImg: require('../assets/img/thebanner.jpg'),
                 titleInfo: [
                     {
-                        title: '专注于移动APP开发'
+                        title: '连城'
                     }
                 ]
             },

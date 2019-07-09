@@ -6,7 +6,7 @@ const twoPlatformObj = {
             text: '两大',
             color: '#333'
         }, {
-            text: '开发平台',
+            text: '平台',
             color: '#333'
         }
     ],
@@ -17,11 +17,11 @@ const twoPlatformObj = {
     idName: 'twoPlatform-anchor',
     contentInfo: [
         {
-            title: 'iOS App开发',
+            title: 'iOS App',
             subTitle: 'iPhone、iPad两种终端类型，适应市面上所有分辨率',
             iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png')
         }, {
-            title: 'Android App开发',
+            title: 'Android App',
             subTitle: '包含手机、PAD两种终端，适配市面上所有主流分辨率',
             iconImg: require('../../img/ico-android-140-px-b-l-u-e@3x.png')
         }
