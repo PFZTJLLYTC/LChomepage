@@ -40,26 +40,14 @@ export default {
                     if( viewUrlState === 'Home' ) {
                         // 判断 滚动值的范围( 修正距离: 不比分要触碰顶部时 进行切换; 减400px )
                         //暂时未修改
-                        if( yValue>=1000 && yValue<1300 ) {
-                            this.cacheMethodsState( '获取服务', 2 )
-                        } else if( yValue>=1300 && yValue<2100 ) {
-                            this.cacheMethodsState( '服务简介', 3 )
-                        } else if( yValue>=2100 && yValue<2600 ) {
-                            this.cacheMethodsState( '行业方案', 4 )
-                        } else if( yValue>=2600 && yValue<4900 ) {
-                            this.cacheMethodsState( '团队介绍', 5 )
-                        } /*删除招贤纳士
-                        else if( yValue>=4900 && yValue<5800 ) {
-                            this.cacheMethodsState( '招贤纳士', 6 )
-                        } else if( yValue>=5800 && yValue<7300 ) {
-                            this.cacheMethodsState( '关于我们', 7 )
-                        } else if( yValue>=7300 ) {
-                            this.cacheMethodsState( '联系我们', 8 )
-                        }*/
-                        else if( yValue>=4900 && yValue<5800 ) {
-                            this.cacheMethodsState( '关于我们', 6 )
-                        } else if( yValue>=5800) {
-                            this.cacheMethodsState( '联系我们', 7 )
+                        if( yValue>=1000 && yValue<2300 ) {
+                            this.cacheMethodsState( '服务简介', 2 )
+                        } else if( yValue>=2300 && yValue<3200 ) {
+                            this.cacheMethodsState( '获取服务', 3 )
+                        } else if( yValue>=3200 && yValue<3500 ) {
+                            this.cacheMethodsState( '关于我们', 4 )
+                        } else if( yValue>=3500 ) {
+                            this.cacheMethodsState( '联系我们', 5 )
                         }
                     }
                     mobileAppbar.setAttribute( 'class', 'mu-appbar mu-paper-1 moveViewStyle' )
