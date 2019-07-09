@@ -1,9 +1,9 @@
 <template lang="pug">
 #Service
     mu-row( gutter )
-        mu-col( 
+        mu-col(
             v-for="item in serviceArr" v-bind:key="item.title"
-            class="serviceBox mediaQuery--serviceBox" 
+            class="serviceBox mediaQuery--serviceBox"
             width="100" tablet="50" desktop="20"
         )
             div
@@ -23,79 +23,68 @@ export default {
         // 目的: 点击'查看详情' -> 跳转到详情页
         toDetailPage(detailPageUrl) {
             // 判断跳转是否为CMMI链接
-            if( detailPageUrl != 'CMMI' ) {
-                location.href = '#/' + detailPageUrl
-            } else {
-                location.href = 'http://baike.baidu.com/link?url=fEHKyvDNi26xfAcmLZmshqPUXjv_N100RQnBraaK2ACYZnJ_My57DTN_XHER-3q9dFkSySDl4h97xgipV6hou_'
-            }
+            // if( detailPageUrl != 'CMMI' ) {
+            //     location.href = '#/' + detailPageUrl
+            // } else {
+            //     location.href = 'http://baike.baidu.com/link?url=fEHKyvDNi26xfAcmLZmshqPUXjv_N100RQnBraaK2ACYZnJ_My57DTN_XHER-3q9dFkSySDl4h97xgipV6hou_'
+            // }
+            location.href = '#/' + detailPageUrl
         }
     },
     data() {
         return {
             serviceArr: [
                 {
+                    //这里图片修改！
                     img     : require('../../assets/img/ico-tool-30-px@3x.png'),
-                    title   : 'app应用',
+                    title   : '用户入口',
                     url     : 'Application',
                     textArr: [
                         {
-                            text: `各大主流平台Android、iOS、`
+                            text: `Android4.0+、iOS10+`
                         }, {
-                            text: `WindowsPhone、HTML5`
+                            text: `完美适配刘海屏、全面屏、色彩友好，`
                         }, {
-                            text: `原生和混合式开发，对大数据...`
+                            text: `与生活贴近`
                         }
                     ]
                 }, {
                     img     : require('../../assets/img/ico-software-30-px@3x.png'),
-                    title   : '大数据平台建设',
+                    title   : '司机入口',
                     url     : 'BigData',
                     textArr: [
                         {
-                            text: `大型分布式平台建设，`
+                            text: `人线对应、即时延时消息通知，`
                         }, {
-                            text: `高并发应用系统架构搭建，`
+                            text: `多机型适配，`
                         }, {
-                            text: `海量数据加工处理...`
+                            text: `简与用兼顾...`
                         }
                     ]
                 }, {
                     img     : require('../../assets/img/ico-manager-30-px@3x.png'),
-                    title   : '电商网站',
+                    title   : '管理员入口',
                     url     : 'ECommerce',
                     textArr: [
                         {
-                            text: `长期跟踪电商领域发展，`
+                            text: `网页管理、可实现移动化办公，`
                         }, {
-                            text: `拥有多年电商系统独立开发和二开经验，`
+                            text: `年、月、日数据分析，`
                         }, {
-                            text: `精通于B2C、B2B...`
+                            text: `多线路合作通道...`
                         }
                     ]
                 }, {
                     img     : require('../../assets/img/ico-software-30-px@3x.png'),
-                    title   : '软硬结合系统集成',
+                    title   : '其他合作',
                     url     : 'SystemIntegration',
                     textArr: [
                         {
-                            text: `智能硬件、物联网关键技术、`
+                            text: `加盟或反馈、`
                         }, {
-                            text: `各频段RFID应用系统建设，`
+                            text: `商业投放与推广，`
                         }, {
-                            text: `现已在智能家居、港口电子……`
-                        }
-                    ]
-                }, {
-                    img     : require('../../assets/img/ico-c-m-m-i-30-px@3x.png'),
-                    title   : 'CMMI认证',
-                    url     : 'CMMI',
-                    textArr: [
-                        {
-                            text: `CMMI是一套融合多学科的、`
-                        }, {
-                            text: `可扩充的产品集合，`
-                        }, {
-                            text: `其研制的初步动机……`
+                            text: `其他定制要求……`
                         }
                     ]
                 }
@@ -138,9 +127,9 @@ export default {
                     border-color: $C-theme
                     +bC( $C-theme )
                     color: $F
-                
 
-// 媒体查询 
+
+// 媒体查询
 .mediaQuery--serviceBox
     @media only screen and ( min-width : 320px )
         >div

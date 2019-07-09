@@ -19,13 +19,13 @@ export default {
             contactUsArr: [
                 {
                     iconName: 'public',
-                    info: 'https://github.com/PFZTJLLYTC'
+                    info: 'liancheng.a.2019@gmail.com'
                 }, {
                     iconName: 'group',
                     info: '公众号：连城出行'
                 }, {
                     iconName: 'place',
-                    info: '上海市普陀区中山北路3663号（华东师范大学）'
+                    info: '上海市普陀区中山北路3663号'
                 }
             ],
             input                      : '',
