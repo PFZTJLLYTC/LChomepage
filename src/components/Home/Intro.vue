@@ -126,26 +126,30 @@ export default {
                     imgLeft     : true,
                     itemColor   : '#67B5C2',
                     itemImgSrc  : require('../../assets/img/works_2.png'),
-                    itemTitle   : `连城App`,
-                    itemText    : `连城App是连城服务的客户端，用户和司机通过此App进行订单的上传和接收。联系更加方便且分配灵活。`
+                    itemTitle   : `用户App`,
+                    itemText    : `用户端App主要用来帮助用户上传订单、查看订单以及更多辅助性服务，
+                    可以随时查看出行状况以及更加方便地与司机进行沟通。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#6574BB',
-                    itemImgSrc  : require('../../assets/img/works_5.png'),
-                    itemTitle   : `连城服务`,
-                    itemText    : `连城服务一直在探索更加便民的服务方式，所以总是在升级，您的支持将让我们更加努力。:)`
+                    itemImgSrc  : require('../../assets/img/works_3.png'),
+                    itemTitle   : `管理系统`,
+                    itemText    : `管理系统服务于线路管理人，提供司机和订单的相关操作，准确全面地为用户提供服务，
+                    并且提供数据统计，可以细化分工以及扩展长远业务`
                 }, {
                     imgLeft     : true,
                     itemColor   : '#343A48',
-                    itemImgSrc  : require('../../assets/img/works_3.png'),
-                    itemTitle   : `连城管理系统`,
-                    itemText    : `方便线路管理人的管理端，提供多项操作，准确管理订单和司机，并且提供统计数据和司机绩效，让管理人更加方便业务处理。`
+                    itemImgSrc  : require('../../assets/img/works_5.png'),
+                    itemTitle   : `司机App`,
+                    itemText    : `司机App主要用于司机接收订单查看订单信息，可以方便司机查看订单信息，
+                    以及自身的统计数据，方便司机的未来规划`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#6574BB',
                     itemImgSrc  : require('../../assets/img/works_1.png'),
-                    itemTitle   : `查看更多`,
-                    itemText    : `···`
+                    itemTitle   : `数据统计`,
+                    itemText    : `在提供基础功能的前提下，累计数据，便于线路管理人的业务规划，
+                    同时也为连城服务提供数据以便分析获取更多出行诉求，扩大用户群体`
                 }
             ]
         }
