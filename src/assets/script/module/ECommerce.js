@@ -1,41 +1,12 @@
 const ECommerceModule = [
     {
         imgLeft: true,
-        title: '多端支持',
-        backgroundColor: '#6574BB',
-        infoText: `提供PC电商、微商城、APP商城提供原生APP、
-                    混合APP、低成本webAPP三种APP商城
-                    解决方案`,
-        imgUrl: require('../../img/pic-detail-3-1@3x.png')
-    }, {
-        imgLeft: false,
-        title: '营销系统',
-        backgroundColor: '#EAEAEA',
-        infoText: `配套三级分销，推荐提佣结算系统，
-                    优惠促销支持`,
-        imgUrl: require('../../img/pic-detail-3-2@3x.png')
-    }, {
-        imgLeft: true,
-        title: '支付系统',
+        title: '·管理员',
         backgroundColor: '#67B5C2',
-        infoText: `支持常规的支付宝、微信、
-                    银联等主流支付渠道`,
-        imgUrl: require('../../img/pic-detail-3-3@3x.png')
-    }, {
-        imgLeft: false,
-        title: '大型电商平台架构',
-        backgroundColor: '#EAEAEA',
-        infoText: `结合云中计算大型和超大型线上平台架构设计经验，
-                    为大型电商平台发展提供支撑，根据业务促销活动对系统并发要求，
-                    灵活横向扩展系统节点`,
-        imgUrl: require('../../img/pic-detail-3-4@3x.png')
-    }, {
-        imgLeft: true,
-        title: '安全系统',
-        backgroundColor: '#343A48',
-        infoText: `支持常规的支付宝、微信、
-                    银联等主流支付渠道`,
-        imgUrl: require('../../img/pic-detail-3-5@3x.png')
+        infoText: `管理员通过登陆界面验证后可查看相应信息，首先展示的是与线路有关的用户（包括乘客和司机）以及营业数据。
+                   管理员拥有与其等级匹配的操作权限，包括但不限于对司机的信息的修改、查询甚至删除，对乘客部分信息的查询等。
+                   线路管理人员在网页为乘客提交的订单分配符合条件的司机。`,
+        imgUrl: require('../../img/pic-detail-3-1@3x.png')
     }
 ];
 

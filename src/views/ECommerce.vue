@@ -4,15 +4,21 @@
     DetailAppBar
     DetailBanner( v-bind:DetailBanner="bannerInfo" )
     DetailContent( v-bind:DetailContentProps="eCommerceArr" )
+    .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
+        TitleBox( v-bind:titleInfo="contactUsModule" )
+        ContactUs
 </template>
 
 <script>
-import DetailAppBar         from '../components/common/DetailAppBar'    
+import DetailAppBar         from '../components/common/DetailAppBar'
 import DetailBanner         from '../components/common/DetailBanner'
-import DetailContent        from '../components/common/DetailContent' 
+import DetailContent        from '../components/common/DetailContent'
+import ContactUs    from '../components/Home/ContactUs'
+import TitleBox     from '../components/common/TitleBox'
 
-import { ECommerceModule }  from '../assets/script/module/ECommerce.js'  
-const components = { DetailAppBar, DetailBanner, DetailContent }
+import { ECommerceModule }  from '../assets/script/module/ECommerce.js'
+import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, contactUsObj }    from '../assets/script/module/Home'
+const components = { DetailAppBar, DetailBanner, DetailContent, TitleBox, ContactUs }
 
 export default {
     name: 'ECommerce',
@@ -22,11 +28,17 @@ export default {
                 bgImg: require('../assets/img/ECommerce-bgbanner.png'),
                 titleInfo: [
                     {
-                        title: '专业电商系统研发'
+                        title: '管理员'
                     }
                 ]
             },
-            eCommerceArr: ECommerceModule
+            eCommerceArr: ECommerceModule,
+            serviceModule: serviceObj,
+            introModule: introObj,
+            worksModule: worksObj,
+            teamModule: teamObj ,
+            aboutUsModule: aboutUsObj,
+            contactUsModule: contactUsObj
         }
     },
     mounted: function() {

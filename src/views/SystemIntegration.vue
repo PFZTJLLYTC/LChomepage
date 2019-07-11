@@ -4,16 +4,21 @@
     DetailAppBar
     DetailBanner( v-bind:DetailBanner="bannerInfo" )
     DetailContent( v-bind:DetailContentProps="systemIntegrationArr" )
+    .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
+        TitleBox( v-bind:titleInfo="contactUsModule" )
+        ContactUs
 </template>
 
 <script>
 import DetailAppBar                 from '../components/common/DetailAppBar'
 import DetailBanner                 from '../components/common/DetailBanner'
 import DetailContent                from '../components/common/DetailContent'
+import ContactUs    from '../components/Home/ContactUs'
+import TitleBox     from '../components/common/TitleBox'
 
 import { SystemIntegrationModule }  from '../assets/script/module/SystemIntegration'
-const components = { DetailAppBar, DetailBanner, DetailContent }
-
+import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, contactUsObj }    from '../assets/script/module/Home'
+const components = { DetailAppBar, DetailBanner, DetailContent, TitleBox, ContactUs }
 export default {
 	name: 'SystemIntegration',
 	data() {
@@ -22,11 +27,17 @@ export default {
 				bgImg: require('../assets/img/SystemIntegration.png'),
 				titleInfo: [
 					{
-						title: '智慧物流 | 智能硬件 | 智慧城市'
+						title: '其他合作'
 					}
 				]
 			},
-			systemIntegrationArr: SystemIntegrationModule
+			systemIntegrationArr: SystemIntegrationModule,
+            serviceModule: serviceObj,
+            introModule: introObj,
+            worksModule: worksObj,
+            teamModule: teamObj ,
+            aboutUsModule: aboutUsObj,
+            contactUsModule: contactUsObj
 		}
 	},
 	mounted: function() {

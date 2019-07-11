@@ -24,7 +24,7 @@ import DetailAppBar     from '../components/common/DetailAppBar'
 import DetailBanner     from '../components/common/DetailBanner'
 import TitleBox         from '../components/common/TitleBox'
 
-import { twoPlatformObj, fourPlatformObj, sixAdvantageObj, twentySolutionObj }    from '../assets/script/module/Application'
+import { twoPlatformObj }    from '../assets/script/module/Application'
 const components = { DetailAppBar, DetailBanner, TitleBox }
 
 export default {
@@ -36,14 +36,11 @@ export default {
                 bgImg: require('../assets/img/thebanner.jpg'),
                 titleInfo: [
                     {
-                        title: '连城'
+                        title: '用户'
                     }
                 ]
             },
-            twoPlatformModule: twoPlatformObj,
-            fourPlatformModule: fourPlatformObj,
-            sixAdvantageModule: sixAdvantageObj,
-            twentySolutionModule: twentySolutionObj
+            twoPlatformModule: twoPlatformObj
         }
     },
     mounted: function() {
@@ -139,71 +136,4 @@ export default {
             >p
                 +REM( font-size, $F-text )
                 color: $C-text
-
-// 媒体查询 - 四大平台
-.mediaQuery--fourPlatformModule
-    @media only screen and ( min-width : 320px )
-        width: 50% !important
-        +REM-padding-TB( $M-contentMargin*2 )
-        h3
-            +REM( font-size, $F-title )
-    @media only screen and ( min-width : 1024px )
-        width: 25% !important
-        h3
-            +REM( font-size, $F-title )
-
-// 媒体查询 - 六大服务优势
-.mediaQuery--sixAdvantageModule
-    @media only screen and ( min-width : 320px )
-        +REM-margin-LR( $M-contentMargin )
-        +REM( padding, $M-contentMargin )
-        .sixAdvantageModule
-            .moduleBox__iconImg >img
-                +imgCover( 20% )
-            .moduleBox__info >h3
-                +fontStyle( $F-info, $C-title, 2 )
-            .moduleBox__info >p
-                +fontStyle( $F-text, $C-title, 3 )
-    @media only screen and ( min-width : 640px )
-        .sixAdvantageModule
-            +rowBorderAll( 2, $C-Intro-border )
-            +REM-P( $M-contentMargin )
-            width: 50% !important
-            +REM( height, 120px )
-            .moduleBox__iconImg >img
-                +imgCover( 15% )
-            .moduleBox__info >h3
-                +fontStyle( $F-info, $C-title, 2 )
-            .moduleBox__info >p
-                +fontStyle( $F-text, $C-title, 2 )
-    @media only screen and ( min-width : 1024px )
-        padding: 0
-// 媒体查询 - 二十大行业解决方案( 唯一一个与 .moduleBox__content 同级的类 )
-.mediaQuery--twentySolutionModule
-    @media only screen and ( min-width : 320px )
-        padding:
-            left: $M-contentMargin !important
-            right: $M-contentMargin !important
-        .twentySolutionModule
-            +REM-padding-TB( $M-contentMargin )
-            width: 25%
-            +textCenter
-            // 边框样式
-            +rowBorderAll( 4, $C-Intro-border )
-            h3
-                +fontStyle( $F-text, $C-title )
-    @media only screen and ( min-width : 414px )
-        .twentySolutionModule
-            h3
-                +fontStyle( $F-info, $C-title, 2 )
-    @media only screen and ( min-width : 768px )
-        .twentySolutionModule
-            h3
-                +fontStyle( $F-title, $C-title, 1.5 )
-    @media only screen and ( min-width : 1024px )
-        padding: 0 !important
-        .twentySolutionModule
-            width: 20%
-            +REM( height, 100px )
-            +rowBorderAll( 5, $C-Intro-border )
 </style>
