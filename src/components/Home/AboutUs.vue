@@ -2,7 +2,7 @@
 #AboutUs
     mu-row( gutter )
         mu-col( class="AboutUs--img" width="100" tablet="45" desktop="40" )
-            img( src="../../assets/img/pic-about-us.png" )
+            img( src="../../assets/img/pic-detail-3-1@3x.png" )
         mu-col( class="AboutUs--text" width="100" tablet="55" desktop="60" )
             h3 {{ contentInfo.title }}
             .string
