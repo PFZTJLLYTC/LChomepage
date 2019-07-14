@@ -18,8 +18,8 @@ const SystemIntegrationModule = [
         imgLeft: false,
         title: '新媒体',
         backgroundColor: '#EAEAEA',
-        infoText: `建设官网、开设公众号增进与客户的沟通，并且收集相关反馈，宣传产品，
-                     及时推送连城系统的升级、推广和下载。`,
+        infoText: `建设官网、开设公众号增进与客户的沟通，由此可以宣传产品并收集相关反馈，
+                     及时推送连城系统的升级、推广和下载。同时，连城可作为一个媒介，宣传推广其他有关商品，使城际出行更加丰富多彩。`,
         imgUrl: require('../../img/pic-detail-4-4@3x.png')
     },{
         imgLeft: true,
