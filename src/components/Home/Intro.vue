@@ -3,17 +3,7 @@
 #Intro
     .mobile
         TableRender( v-bind:TableRenderArr = "introArr" )
-    .desktop
-        // 循环输出 进行渲染
-        mu-tabs( v-bind:value="activeTab" @change="handleTabChange" v-bind:style="{ backgroundColor: '#67b5c2' }" )
-            mu-tab( v-for="item in introArr" v-bind:value="item.tabName" v-bind:icon="item.iconName" v-bind:title="item.titleName" v-bind:key="item.titleName" v-bind:style="{ color: '#FFF' }" )
-
-        div( v-for="item in introArr" v-if="activeTab === item.tabName" )
-            TableOnly( v-bind:TableArr = "item.itemArr" )
     //下为之前"行业方案"的实现
-    // 表格渲染
-    TableRender( v-bind:TableRenderArr = "worksArr" )
-    // 图片介绍
     mu-row( gutter )
         mu-col.works--box( v-for="item in worksBoxArr" v-bind:key="item.itemTitle" width="100" tablet="100" desktop="50" )
             div( v-if="item.imgLeft" v-bind:style="{ backgroundColor: item.itemColor }" )
@@ -41,7 +31,7 @@ export default {
         return {
             activeTab: 'APP',          // Tabs 组件 点击效果
             // 服务类型
-            introArr: [
+            /*introArr: [
                 {
                     titleName   : `APP应用开发`,
                     iconName    : "phone_iphone",
@@ -83,7 +73,7 @@ export default {
                             itemTitle   : '大型门户'
                         }
                     ]
-                }, /*{
+                }, /!*{
                     titleName   : `电商系统`,
                     iconName    : "local_grocery_store",
                     tabName     : "ECommerce",
@@ -106,7 +96,7 @@ export default {
                             itemTitle   : '微商城'
                         }
                     ]
-                }, */{
+                }, *!/{
                 //之前"行业方案"的内容
                     titleName   : `消息与升级`,
                     iconName    : "settings",
@@ -121,7 +111,7 @@ export default {
                         },
                     ]
                 }
-            ],worksBoxArr: [
+            ],*/worksBoxArr: [
                 {
                     imgLeft     : true,
                     itemColor   : '#67B5C2',
