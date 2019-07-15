@@ -33,10 +33,10 @@ export default {
         return {
             // 传递给 Banner组件( 通用 )的数据
             bannerInfo: {
-                bgImg: require('../assets/img/thebanner.jpg'),
+                bgImg: require('../assets/img/userbanner.jpg'),
                 titleInfo: [
                     {
-                        title: '用户'
+                        title: '去你所想'
                     }
                 ]
             },

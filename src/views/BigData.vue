@@ -35,10 +35,10 @@ export default {
     data() {
         return {
             bannerInfo: {
-                bgImg: require('../assets/img/bigData-bgbanner.jpg'),
+                bgImg: require('../assets/img/driverbanner.jpg'),
                 titleInfo: [
                     {
-                        title: '司机'
+                        title: '心之所安'
                     }
                 ]
             },
