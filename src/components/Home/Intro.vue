@@ -4,8 +4,40 @@
     .mobile
         TableRender( v-bind:TableRenderArr = "introArr" )
     //下为之前"行业方案"的实现
+
+    DetailContent( v-bind:DetailContentProps="userApp" )
     mu-row( gutter )
-        mu-col.works--box( v-for="item in worksBoxArr" v-bind:key="item.itemTitle" width="100" tablet="100" desktop="50" )
+        mu-col.works--box( v-for="item in userAppArr" v-bind:key="item.itemTitle" width="100" tablet="100" desktop="50" )
+            div( v-if="item.imgLeft" v-bind:style="{ backgroundColor: item.itemColor }" )
+                .works--box--imgBox( v-bind:style=" { backgroundImage: 'url(' + item.itemImgSrc + ')', backgroundSize: 'cover' } " )
+                .works--box--textContent
+                    .flexbox
+                        h3 {{ item.itemTitle }}
+                        p {{ item.itemText }}
+            div( v-else v-bind:style="{ backgroundColor: item.itemColor }" )
+                .works--box--textContent
+                    .flexbox
+                        h3 {{ item.itemTitle }}
+                        p.text {{ item.itemText }}
+                .works--box--imgBox( v-bind:style=" { backgroundImage: 'url(' + item.itemImgSrc + ')', backgroundSize: 'cover' } " )
+    DetailContent( v-bind:DetailContentProps="driverApp" )
+    mu-row( gutter )
+        mu-col.works--box( v-for="item in driverAppArr" v-bind:key="item.itemTitle" width="100" tablet="100" desktop="50" )
+            div( v-if="item.imgLeft" v-bind:style="{ backgroundColor: item.itemColor }" )
+                .works--box--imgBox( v-bind:style=" { backgroundImage: 'url(' + item.itemImgSrc + ')', backgroundSize: 'cover' } " )
+                .works--box--textContent
+                    .flexbox
+                        h3 {{ item.itemTitle }}
+                        p {{ item.itemText }}
+            div( v-else v-bind:style="{ backgroundColor: item.itemColor }" )
+                .works--box--textContent
+                    .flexbox
+                        h3 {{ item.itemTitle }}
+                        p.text {{ item.itemText }}
+                .works--box--imgBox( v-bind:style=" { backgroundImage: 'url(' + item.itemImgSrc + ')', backgroundSize: 'cover' } " )
+    DetailContent( v-bind:DetailContentProps="manager" )
+    mu-row( gutter )
+        mu-col.works--box( v-for="item in managerArr" v-bind:key="item.itemTitle" width="100" tablet="100" desktop="50" )
             div( v-if="item.imgLeft" v-bind:style="{ backgroundColor: item.itemColor }" )
                 .works--box--imgBox( v-bind:style=" { backgroundImage: 'url(' + item.itemImgSrc + ')', backgroundSize: 'cover' } " )
                 .works--box--textContent
@@ -23,7 +55,13 @@
 <script>
 import TableRender      from '../common/TableRender'
 import TableOnly        from '../common/TableOnly'
-const components = { TableRender, TableOnly }
+import DetailContent    from '../common/DetailContent'
+
+
+const components = { TableRender, TableOnly ,DetailContent}
+import { UserAppModule }  from '../../assets/script/module/UserApp.js'
+import { DriverAppModule } from "../../assets/script/module/DriverApp.js";
+import { ManagerModule } from "../../assets/script/module/Manager.js";
 
 export default {
     name: 'Intro',
@@ -31,117 +69,90 @@ export default {
         return {
             activeTab: 'APP',          // Tabs 组件 点击效果
             // 服务类型
-            /*introArr: [
-                {
-                    titleName   : `APP应用开发`,
-                    iconName    : "phone_iphone",
-                    tabName     : "APP",
-                    leftBorderColor: `#67B5C2`,                             // 标题 左边框颜色
-                    itemArr : [                                             // 单独服务类型的细分数组
-                        {
-                            iconImg     : require('../../assets/img/ico-iphone-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : 'Apple'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-android-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : 'Android'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-h-t-m-l-5-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : 'HTML5'
-                        }
-                    ]
-                }, {
-                    titleName   : `管理端应用`,
-                    iconName    : "laptop_mac",
-                    tabName     : "Enterprise",
-                    leftBorderColor: `#67B5C2`,                             // 标题 左边框颜色
-                    itemArr : [
-                        {
-                            iconImg     : require('../../assets/img/ico-windows-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row4',
-                            itemTitle   : 'Windows'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-w-e-b-s-i-t-e-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row5',
-                            itemTitle   : '大型门户'
-                        }
-                    ]
-                }, /!*{
-                    titleName   : `电商系统`,
-                    iconName    : "local_grocery_store",
-                    tabName     : "ECommerce",
-                    leftBorderColor: `#67B5C2`,                             // 标题 左边框颜色
-                    itemArr : [
-                        {
-                            iconImg     : require('../../assets/img/ico-webshop-140-px@3x.png'),
-                            row         : "33%",
-                            rowClass    : 'row3',
-                            itemTitle   : '线上电商'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-appshop-140-px@3x.png'),
-                            row         : "33%",
-                            rowClass    : 'row3',
-                            itemTitle   : '移动商城'
-                        }, {
-                            iconImg     : require('../../assets/img/ico-weishop-140-px@3x.png'),
-                            row         : "33%",
-                            rowClass    : 'row3',
-                            itemTitle   : '微商城'
-                        }
-                    ]
-                }, *!/{
-                //之前"行业方案"的内容
-                    titleName   : `消息与升级`,
-                    iconName    : "settings",
-                    tabName     : "system",
-                    leftBorderColor: `#67B5C2`,                             // 标题 左边框颜色
-                    itemArr : [
-                        {
-                            iconImg     : require('../../assets/img/ico-wechat-140-px@3x.png'),
-                            row         : "25%",
-                            rowClass    : 'row5',
-                            itemTitle   : '微信推送'
-                        },
-                    ]
-                }
-            ],*/worksBoxArr: [
+            userAppArr: [
                 {
                     imgLeft     : true,
-                    itemColor   : '#67B5C2',
-                    itemImgSrc  : require('../../assets/img/works_2.png'),
-                    itemTitle   : `用户App`,
-                    itemText    : `用户端App主要用来帮助用户上传订单、查看订单以及更多辅助性服务，
-                    可以随时查看出行状况以及更加方便地与司机进行沟通。`
+                    itemColor   : '#0066cc',
+                    itemImgSrc  : require('../../assets/img/userApp1.jpg'),
+                    itemTitle   : `发现界面`,
+                    itemText    : `为用户提供更多休闲性服务，在乘车过程中拥有更好的体验.`
                 }, {
                     imgLeft     : false,
-                    itemColor   : '#6574BB',
-                    itemImgSrc  : require('../../assets/img/works_3.png'),
-                    itemTitle   : `管理系统`,
-                    itemText    : `管理系统服务于线路管理人，提供司机和订单的相关操作，准确全面地为用户提供服务，
-                    并且提供数据统计，可以细化分工以及扩展长远业务`
+                    itemColor   : '#0066cc',
+                    itemImgSrc  : require('../../assets/img/userApp4.jpg'),
+                    itemTitle   : `用户个人信息界面`,
+                    itemText    : `用于用户所有订单记录的查看，并且可以修改App设置以适应用户的使用习惯。`
+                },{
+                    imgLeft     : true,
+                    itemColor   : '#0066cc',
+                    itemImgSrc  : require('../../assets/img/userApp5.jpg'),
+                    itemTitle   : `客服界面`,
+                    itemText    : `可以使用户熟悉软件使用，并且提供更多关于服务细节的信息。`
+                }, {
+                    imgLeft     : false,
+                    itemColor   : '#0066cc',
+                    itemImgSrc  : require('../../assets/img/userApp4.jpg'),
+                    itemTitle   : `订单界面`,
+                    itemText    : `便于用户查看当前订单和历史订单，提供乘车的具体信息。（待修改）`
+                }
+            ],
+            userApp: UserAppModule,
+            driverAppArr: [
+                {
+                    imgLeft     : true,
+                    itemColor   : '#0099cc',
+                    itemImgSrc  : require('../../assets/img/driverApp21.jpg'),
+                    itemTitle   : `司机信息界面`,
+                    itemText    : `司机个人信息修改、历史订单查看、车上可用座位数量设置以及客服服务。`
+                }, {
+                    imgLeft     : false,
+                    itemColor   : '#0099cc',
+                    itemImgSrc  : require('../../assets/img/driverApp22.jpg'),
+                    itemTitle   : `司机状态修改`,
+                    itemText    : `司机通过修改状态来灵活使用自己的工作时间，也方便线路管理人对司机的任务分配。`
+                },{
+                    imgLeft     : true,
+                    itemColor   : '#0099cc',
+                    itemImgSrc  : require('../../assets/img/driverApp23.jpg'),
+                    itemTitle   : `总订单查看`,
+                    itemText    : `司机可查看自己往期订单以及现在正在进行的订单，提供关键记录，便于司机的日常使用。`
+                }, {
+                    imgLeft     : false,
+                    itemColor   : '#0099cc',
+                    itemImgSrc  : require('../../assets/img/driverApp24.jpg'),
+                    itemTitle   : `司机主要信息`,
+                    itemText    : `当司机有车型更换或者车牌更换时，修改此处可以同步管理人和用户的订单信息，以便于更好的工作处理。`
+                }
+            ],
+            driverApp: DriverAppModule,
+            managerArr: [
+                {
+                    imgLeft     : true,
+                    itemColor   : '#336699',
+                    itemImgSrc  : require('../../assets/img/manager22.png'),
+                    itemTitle   : `订单处理界面`,
+                    itemText    : `管理员系统的主要功能，用于分发订单给司机，快速处理订单，不再需要电话联系等延时信息处理。`
+                },{
+                    imgLeft     : false,
+                    itemColor   : '#336699',
+                    itemImgSrc  : require('../../assets/img/manager21.png'),
+                    itemTitle   : `司机管理界面`,
+                    itemText    : `便于管理人管理司机，提供每个司机的历史订单数以及当前状态，方便管理人评价员工绩效。`
                 }, {
                     imgLeft     : true,
-                    itemColor   : '#343A48',
-                    itemImgSrc  : require('../../assets/img/works_5.png'),
-                    itemTitle   : `司机App`,
-                    itemText    : `司机App主要用于司机接收订单查看订单信息，可以方便司机查看订单信息，
-                    以及自身的统计数据，方便司机的未来规划`
+                    itemColor   : '#336699',
+                    itemImgSrc  : require('../../assets/img/manager23.png'),
+                    itemTitle   : `司机登记验证`,
+                    itemText    : `司机正常处理订单需经过线路管理员的审核即身份验证后，确保其信息是否正确，才能正常使用连城的司机App。`
                 }, {
                     imgLeft     : false,
-                    itemColor   : '#6574BB',
-                    itemImgSrc  : require('../../assets/img/works_1.png'),
-                    itemTitle   : `数据统计`,
-                    itemText    : `在提供基础功能的前提下，累计数据，便于线路管理人的业务规划，
-                    同时也为连城服务提供数据以便分析获取更多出行诉求，扩大用户群体`
+                    itemColor   : '#336699',
+                    itemImgSrc  : require('../../assets/img/manager24.png'),
+                    itemTitle   : `用户信息`,
+                    itemText    : `记录用户的使用情况，便于管理员业务展开，提供更加全面、高效的城际服务。`
                 }
-            ]
+            ],
+            manager: ManagerModule
         }
     },
     methods: {

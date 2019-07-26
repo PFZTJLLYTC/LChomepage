@@ -118,7 +118,7 @@ export default {
         >div
             +REM( height, 300px )
             .detailContent__img >img
-                +imgCover( 60% )
+                +imgCover( 100% )
             .detailContent__info
                 +REM-P( $M-contentMargin*4 )
                 >h3
