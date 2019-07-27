@@ -86,14 +86,14 @@ export default {
                     imgLeft     : true,
                     itemColor   : '#0066cc',
                     itemImgSrc  : require('../../assets/img/userApp5.jpg'),
-                    itemTitle   : `客服界面`,
-                    itemText    : `可以使用户熟悉软件使用，并且提供更多关于服务细节的信息。`
+                    itemTitle   : `行程界面`,
+                    itemText    : `用户可直接查看订单信息以及自己的行程情况，以便做出更好的出行计划，也可与司机联系商谈一些细节要求。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#0066cc',
-                    itemImgSrc  : require('../../assets/img/userApp4.jpg'),
-                    itemTitle   : `订单界面`,
-                    itemText    : `便于用户查看当前订单和历史订单，提供乘车的具体信息。（待修改）`
+                    itemImgSrc  : require('../../assets/img/userApp3.jpg'),
+                    itemTitle   : `消息界面`,
+                    itemText    : `用于查看订单处理情况，主要由线路管理员处理订单后推送信息给用户，以便用户能及时了解自己订单的处理情况。`
                 }
             ],
             userApp: UserAppModule,
@@ -136,8 +136,8 @@ export default {
                     imgLeft     : false,
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager21.png'),
-                    itemTitle   : `司机管理界面`,
-                    itemText    : `便于管理人管理司机，提供每个司机的历史订单数以及当前状态，方便管理人评价员工绩效。`
+                    itemTitle   : `其它信息`,
+                    itemText    : `订单记录总结以及公司概况，还有客服、推送等的处理。`
                 }, {
                     imgLeft     : true,
                     itemColor   : '#336699',
@@ -148,8 +148,8 @@ export default {
                     imgLeft     : false,
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager24.png'),
-                    itemTitle   : `用户信息`,
-                    itemText    : `记录用户的使用情况，便于管理员业务展开，提供更加全面、高效的城际服务。`
+                    itemTitle   : `所有订单记录`,
+                    itemText    : `历史所有订单的记录，提供概况，便于管理员对工作的总体情况查看，以便下一步业务的展开。`
                 }
             ],
             manager: ManagerModule
