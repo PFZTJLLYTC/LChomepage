@@ -17,6 +17,7 @@
                 .moduleBox__info
                     h3 {{ item.title }}
                     p {{ item.subTitle }}
+                    a( v-bind:href="item.download"  ) {{ item.word }}
 </template>
 
 <script>

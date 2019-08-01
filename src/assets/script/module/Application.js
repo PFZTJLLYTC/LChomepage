@@ -19,11 +19,49 @@ const twoPlatformObj = {
         {
             title: 'iOS App',
             subTitle: 'iPhone、iPad两种终端类型，适应市面上所有分辨率',
-            iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png')
+            iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png'),
+            download: '',
+            word: '系统正在升级中'
         }, {
             title: 'Android App',
             subTitle: '包含手机、PAD两种终端，适配市面上所有主流分辨率',
-            iconImg: require('../../img/ico-android-140-px-b-l-u-e@3x.png')
+            iconImg: require('../../img/ico-android-140-px-b-l-u-e@3x.png'),
+            download: 'http://www.liancheng8102.cn/liancheng/download/LC.apk',
+            word: '点我下载'
+        }
+    ]
+};
+
+const twoPlatformDriverObj = {
+    name: '两大平台',
+    backgroundColor: '#FFF',
+    title: [
+        {
+            text: '两大',
+            color: '#333'
+        }, {
+            text: '平台',
+            color: '#333'
+        }
+    ],
+    subTitle: {
+        text: 'TWO PLATFORM',
+        color: '#555555'
+    },
+    idName: 'twoPlatform-anchor',
+    contentInfo: [
+        {
+            title: 'iOS App',
+            subTitle: 'iPhone、iPad两种终端类型，适应市面上所有分辨率',
+            iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png'),
+            download: '',
+            word: '系统正在升级中'
+        }, {
+            title: 'Android App',
+            subTitle: '包含手机、PAD两种终端，适配市面上所有主流分辨率',
+            iconImg: require('../../img/ico-android-140-px-b-l-u-e@3x.png'),
+            download: 'http://www.liancheng8102.cn/liancheng/download/LCdr.apk',
+            word: '点我下载'
         }
     ]
 };
@@ -194,4 +232,4 @@ const twentySolutionObj = {
     ]
 };
 
-export { twoPlatformObj, fourPlatformObj, sixAdvantageObj, twentySolutionObj };
+export { twoPlatformObj, twoPlatformDriverObj, fourPlatformObj, sixAdvantageObj, twentySolutionObj };

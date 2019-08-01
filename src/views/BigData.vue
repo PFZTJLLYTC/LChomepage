@@ -5,12 +5,12 @@
     DetailBanner( v-bind:DetailBanner="bannerInfo" )
     DetailContent( v-bind:DetailContentProps="bigDataArr" )
     // 两大开发平台
-    .moduleBox( v-bind:style="{ backgroundColor: twoPlatformModule.backgroundColor }" )
-        TitleBox( v-bind:titleInfo="twoPlatformModule" )
+    .moduleBox( v-bind:style="{ backgroundColor: twoPlatformDriverModule.backgroundColor }" )
+        TitleBox( v-bind:titleInfo="twoPlatformDriverModule" )
         mu-row.moduleBox__content( gutter )
             mu-col(
-                v-for="item in twoPlatformModule.contentInfo" v-bind:key="item.title"
-                class="mediaQuery--twoPlatformModule twoPlatformModule"
+                v-for="item in twoPlatformDriverModule.contentInfo" v-bind:key="item.title"
+                class="mediaQuery--twoPlatformDriverModule twoPlatformDriverModule"
                 width="100" tablet="100" desktop="50"
             )
                 .moduleBox__iconImg( v-bind:style="{ borderRadius: '50%' }" )
@@ -18,6 +18,7 @@
                 .moduleBox__info
                     h3 {{ item.title }}
                     p {{ item.subTitle }}
+                    a( v-bind:href="item.download"  ) {{ item.word }}
 </template>
 
 <script>
@@ -27,7 +28,7 @@ import DetailContent        from '../components/common/DetailContent'
 import TitleBox         from '../components/common/TitleBox'
 
 import { BigDataModule }    from '../assets/script/module/BigData'
-import { twoPlatformObj }    from '../assets/script/module/Application'
+import { twoPlatformDriverObj }    from '../assets/script/module/Application'
 const components = { DetailAppBar, DetailBanner, DetailContent, TitleBox }
 
 export default {
@@ -43,7 +44,7 @@ export default {
                 ]
             },
             bigDataArr: BigDataModule,
-            twoPlatformModule: twoPlatformObj
+            twoPlatformDriverModule: twoPlatformDriverObj
         }
     },
     mounted: function() {
@@ -96,7 +97,7 @@ export default {
                 +fontStyle( $F-text, $C-text, 1.5 )
 
 // 媒体查询 - 两大平台
-.mediaQuery--twoPlatformModule
+.mediaQuery--twoPlatformDriverModule
     +REM( padding, $M-contentMargin )
     @media only screen and ( min-width : 1024px )
         +textCenter
