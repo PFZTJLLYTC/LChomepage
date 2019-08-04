@@ -1,5 +1,9 @@
 # 连城homepage
 
++ [official page display](http://www.liancheng8102.cn)
++ 待升级。。。
+
+
 ## todo list
 1. ~~获取服务下面改为：
     普通用户入口、司机入口、负责人入口、其他合作入口，同时图标改一下~~
