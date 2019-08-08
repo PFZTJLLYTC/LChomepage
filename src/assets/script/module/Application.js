@@ -20,7 +20,7 @@ const twoPlatformObj = {
             title: 'iOS App',
             subTitle: 'iPhone、iPad两种终端类型，适应市面上所有分辨率',
             iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png'),
-            download: '',
+            download: '#',
             word: '系统正在升级中'
         }, {
             title: 'Android App',
@@ -54,7 +54,7 @@ const twoPlatformDriverObj = {
             title: 'iOS App',
             subTitle: 'iPhone、iPad两种终端类型，适应市面上所有分辨率',
             iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png'),
-            download: '',
+            download: '#',
             word: '系统正在升级中'
         }, {
             title: 'Android App',
