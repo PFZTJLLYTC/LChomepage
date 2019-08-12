@@ -131,4 +131,23 @@ const aboutUsObj = {
     idName: 'aboutUs-anchor'
 };
 
-export {serviceObj, introObj, worksObj, teamObj, joinUsObj, contactUsObj, aboutUsObj };
+const registerObj = {
+    name: '管理员申请',
+    backgroundColor: '#FFF',
+    title: [
+        {
+            text: '管理员',
+            color: '#333'
+        }, {
+            text: '申请',
+            color: '#333'
+        }
+    ],
+    subTitle: {
+        text: 'ADMIN REGISTER',
+        color: '#555555'
+    },
+    idName: 'aboutUs-anchor'
+};
+
+export {serviceObj, introObj, worksObj, teamObj, joinUsObj, contactUsObj, aboutUsObj,registerObj };
