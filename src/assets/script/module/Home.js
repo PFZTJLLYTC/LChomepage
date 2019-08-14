@@ -133,7 +133,7 @@ const aboutUsObj = {
 
 const registerObj = {
     name: '管理员申请',
-    backgroundColor: '#FFF',
+    backgroundColor: '#F5F5F5',
     title: [
         {
             text: '管理员',
@@ -147,7 +147,7 @@ const registerObj = {
         text: 'ADMIN REGISTER',
         color: '#555555'
     },
-    idName: 'aboutUs-anchor'
+    idName: 'register-anchor'
 };
 
 export {serviceObj, introObj, worksObj, teamObj, joinUsObj, contactUsObj, aboutUsObj,registerObj };

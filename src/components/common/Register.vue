@@ -4,35 +4,66 @@
         // 表单
         mu-col( class="contactUs--box contactUs--form" width="100" tablet="100" desktop="100" )
             p.form--text {{ formTitle }}
-            mu-text-field( hintText="您的称呼" )
+            mu-text-field( hintText="您的姓名" v-model="registerForm.man_name")
             br
-            mu-text-field( hintText="您申请管理的线路" )
+            mu-text-field( hintText="申请管理的线路" v-model="registerForm.lineName")
             br
-            mu-text-field( hintText="联系方式")
+            mu-text-field( hintText="密码" v-model="registerForm.pwd")
             br
-            mu-text-field( hintText="您的申请理由" multiLine v-bind:rows="5" v-bind:rowsMax="6" )
+            mu-text-field( hintText="微信" v-model="registerForm.wx")
+            br
+            mu-text-field( hintText="联系电话" v-model="registerForm.tel")
+            br
+            mu-text-field( hintText="其他" v-model="registerForm.other")
             .btnBox
-                mu-flat-button.demo-flat-button( label="提交申请" @click="toDetailPage( item.url )" )
+                mu-flat-button.demo-flat-button( label="提交申请" @click="managerRegister('registerForm')" )
 
 </template>
 
 <script>
+import axios from 'axios'
         export default {
             data() {
                 return {
-                    formTitle                   : `如果您想参与线路调度的管理工作，可以申请成为管理员。`
-                    ,input                      : ''
-                    ,inputErrorText             : ''
-                    ,multiLineInput             : ''
-                    ,multiLineInputErrorText    : ''
+                    formTitle                   : `如果您想参与线路调度的管理工作，可以申请成为管理员。`,
+                    registerForm: {
+                        man_name: '',
+                        lineName: '',
+                        pwd: '',
+                        wx:'',
+                        tel: '',
+                        other: ''
+                    }
                 }
             }
             ,methods: {
-                handleInputOverflow (isOverflow) {
-                    this.inputErrorText = isOverflow ? '超过！' : ''
-                },
-                handleMultiLineOverflow (isOverflow) {
-                    this.multiLineInputErrorText = isOverflow ? '超过！' : ''
+                managerRegister(registerForm){
+                    /*console.log(this.registerForm);*/
+                    axios({
+                        method: 'post',
+                        url: 'http://www.liancheng2019.cn/root/manager/add',
+                        data:{
+                            man_name: this.registerForm.man_name,
+                            lineName: this.registerForm.lineName,
+                            pwd: this.registerForm.pwd,
+                            wx: this.registerForm.wx,
+                            tel: this.registerForm.tel,
+                            other: this.registerForm.other
+                        },
+                        transformRequest: [function (data) {
+                            data = JSON.stringify(data);
+                            return data
+                        }],
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    }).then(resp => {
+                        if (resp.data.code === 0) {
+                            alert('成功提交申请')
+                        } else {
+                            alert(resp.data.msg);
+                        }
+                    })
                 }
             }
         }

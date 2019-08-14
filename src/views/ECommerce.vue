@@ -4,7 +4,7 @@
     DetailAppBar
     DetailBanner( v-bind:DetailBanner="bannerInfo" )
     DetailContent( v-bind:DetailContentProps="eCommerceArr" )
-    .moduleBox( v-bind:style="{ backgroundColor: fff }" )
+    .moduleBox( v-bind:style="{ backgroundColor: registerModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="registerModule" )
         Register
     .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
