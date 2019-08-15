@@ -15,7 +15,6 @@
 export default {
     data() {
         return {
-           /* formTitle: `如果您想咨询相关服务，或者亲身体验，更加直观的了解我们的产品，可以查看Github。`,*/
             contactUsArr: [
                 {
                     iconName: 'mail',
@@ -23,6 +22,7 @@ export default {
                 }, {
                     iconName: 'group',
                     info: '公众号：连城出行'
+                    //info: '公众号维护中'
                 }, {
                     iconName: 'place',
                     info: '上海市普陀区中山北路3663号'

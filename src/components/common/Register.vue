@@ -4,17 +4,19 @@
         // 表单
         mu-col( class="contactUs--box contactUs--form" width="100" tablet="100" desktop="100" )
             p.form--text {{ formTitle }}
-            mu-text-field( hintText="您的姓名" v-model="registerForm.man_name")
+            mu-text-field( hintText="姓名" v-model="registerForm.man_name")
             br
-            mu-text-field( hintText="申请管理的线路" v-model="registerForm.lineName")
+            mu-text-field( hintText="申请线路,格式为'北京-上海'" v-model="registerForm.lineName")
             br
-            mu-text-field( hintText="密码" v-model="registerForm.pwd")
-            br
-            mu-text-field( hintText="微信" v-model="registerForm.wx")
+            mu-text-field( hintText="微信号" v-model="registerForm.wx")
             br
             mu-text-field( hintText="联系电话" v-model="registerForm.tel")
             br
-            mu-text-field( hintText="其他" v-model="registerForm.other")
+            mu-text-field( hintText="设置初始密码" v-model="pwd")
+            br
+            mu-text-field( hintText="重复密码" v-model="pwdAgain")
+            br
+            mu-text-field( hintText="其他补充或备注信息" v-model="registerForm.other")
             .btnBox
                 mu-flat-button.demo-flat-button( label="提交申请" @click="managerRegister('registerForm')" )
 
@@ -25,7 +27,7 @@ import axios from 'axios'
         export default {
             data() {
                 return {
-                    formTitle                   : `如果您想参与线路调度的管理工作，可以申请成为管理员。`,
+                    formTitle: `       申请添加你所管理的线路`,
                     registerForm: {
                         man_name: '',
                         lineName: '',
@@ -33,13 +35,22 @@ import axios from 'axios'
                         wx:'',
                         tel: '',
                         other: ''
-                    }
+                    },
+                    pwd:'',
+                    pwdAgain:''
                 }
             }
             ,methods: {
                 managerRegister(registerForm){
                     /*console.log(this.registerForm);*/
-                    axios({
+                    if (this.pwd == ''){
+                        alert("请输入密码");
+                    }
+                    else if (this.pwd!=this.pwdAgain){
+                        alert("密码键入不一致");
+                    }else{
+                        this.registerForm.pwd = this.pwd;
+                        axios({
                         method: 'post',
                         url: 'http://www.liancheng2019.cn/root/manager/add',
                         data:{
@@ -59,11 +70,13 @@ import axios from 'axios'
                         }
                     }).then(resp => {
                         if (resp.data.code === 0) {
-                            alert('成功提交申请')
+                            alert('提交成功，我们将尽快与你联系');
+
                         } else {
-                            alert(resp.data.msg);
+                            alert('提交失败，请确保正确性与完整性！');
                         }
                     })
+                    }
                 }
             }
         }
@@ -76,7 +89,7 @@ import axios from 'axios'
     +global-maxWidth
     @media only screen and ( min-width : 1180px )
         .contactUs--box
-            height: 500px
+            height: 550px
             &:first-child
                +mB( 0 !important)
         .demo-flat-button

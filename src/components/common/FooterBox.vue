@@ -1,6 +1,6 @@
 <template lang="pug">
     .footer
-        p © 连城 2019
+        p Copyright © 2018-2019 LC(连城) All Rights Reserved
 </template>
 
 <style lang="sass?indentedSyntax" scoped>
