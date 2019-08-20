@@ -18,7 +18,8 @@ export default {
             contactUsArr: [
                 {
                     iconName: 'mail',
-                    info: 'liancheng.a.2019@gmail.com'
+                    //info: 'liancheng.a.2019@gmail.com'
+                    info: 'leodpen@gmail.com'
                 }, {
                     iconName: 'group',
                     info: '公众号：连城出行'

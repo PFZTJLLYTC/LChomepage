@@ -31,7 +31,7 @@ const introObj = {
         }
     ],
     subTitle: {
-        text: 'WHAT WE DOING',
+        text: 'WHAT WE DO',
         color: '#555555'
     },
     idName: 'intro-anchor'
