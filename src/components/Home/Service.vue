@@ -41,7 +41,7 @@ export default {
                     url     : 'Application',
                     textArr: [
                         {
-                            text: `Android4.0+、iOS10+`
+                            text: `Android4.0+、iOS8+`
                         }, {
                             text: `完美适配刘海屏、全面屏、色彩友好，`
                         }, {
@@ -50,7 +50,7 @@ export default {
                     ]
                 }, {
                     img     : require('../../assets/img/comiis_siji.png'),
-                    title   : '司机入口',
+                    title   : '车主入口',
                     url     : 'BigData',
                     textArr: [
                         {

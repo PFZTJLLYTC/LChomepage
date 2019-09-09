@@ -18,10 +18,10 @@ const twoPlatformObj = {
     contentInfo: [
         {
             title: 'iOS App',
-            subTitle: 'iPhone、iPad两种终端类型，适应市面上所有分辨率',
+            subTitle: 'iPhone、iPad多终端类型，适应市面上所有分辨率',
             iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png'),
-            download: '#',
-            word: '系统正在升级中'
+            download: 'https://apps.apple.com/cn/app/%E8%BF%9E%E5%9F%8E%E5%87%BA%E8%A1%8C/id1478732957',
+            word: '跳转下载'
         }, {
             title: 'Android App',
             subTitle: '包含手机、PAD两种终端，适配市面上所有主流分辨率',
@@ -52,10 +52,10 @@ const twoPlatformDriverObj = {
     contentInfo: [
         {
             title: 'iOS App',
-            subTitle: 'iPhone、iPad两种终端类型，适应市面上所有分辨率',
+            subTitle: 'iPhone、iPad多终端类型，适应市面上所有分辨率',
             iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png'),
-            download: '#',
-            word: '系统正在升级中'
+            download: 'https://apps.apple.com/cn/app/%E8%BF%9E%E5%9F%8E%E8%BD%A6%E4%B8%BB/id1479205525',
+            word: '跳转下载'
         }, {
             title: 'Android App',
             subTitle: '包含手机、PAD两种终端，适配市面上所有主流分辨率',
