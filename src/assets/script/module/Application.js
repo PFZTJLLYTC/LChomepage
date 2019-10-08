@@ -66,6 +66,41 @@ const twoPlatformDriverObj = {
     ]
 };
 
+const platformObj = {
+    name: '移动端与电脑端管理相结合',
+    backgroundColor: '#FFF',
+    title: [
+        {
+            text: '移动端/电脑端',
+            color: '#333'
+        }, {
+            text: '平台',
+            color: '#333'
+        }
+    ],
+    subTitle: {
+        text: '通过审核后可用',
+        color: '#555555'
+    },
+    idName: 'twoPlatform-anchor',
+    contentInfo: [
+        // {
+        //     title: 'iOS App',
+        //     subTitle: 'iPhone、iPad多终端类型，适应市面上所有分辨率',
+        //     iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png'),
+        //     download: '',
+        //     word: '跳转下载'
+        // },
+         {
+            title: '暂只支持',
+            subTitle: '包含手机、PAD两种终端，适配市面上所有主流分辨率',
+            iconImg: require('../../img/ico-android-140-px-b-l-u-e@3x.png'),
+            download: 'http://www.liancheng8102.cn/liancheng/download/LCMan.apk',
+            word: '点我下载'
+        }
+    ]
+};
+
 const fourPlatformObj = {
     name: '四大开发平台',
     backgroundColor: '#F5F5F5',
@@ -232,4 +267,4 @@ const twentySolutionObj = {
     ]
 };
 
-export { twoPlatformObj, twoPlatformDriverObj, fourPlatformObj, sixAdvantageObj, twentySolutionObj };
+export { twoPlatformObj, twoPlatformDriverObj, fourPlatformObj, sixAdvantageObj, twentySolutionObj,platformObj };

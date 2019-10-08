@@ -39,7 +39,7 @@ export default {
                 bgImg: require('../assets/img/driverbanner.jpg'),
                 titleInfo: [
                     {
-                        title: '心之所安'
+                        title: '化繁为简'
                     }
                 ]
             },

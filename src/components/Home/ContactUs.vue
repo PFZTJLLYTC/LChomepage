@@ -22,7 +22,7 @@ export default {
                     info: 'leodpen@gmail.com'
                 }, {
                     iconName: 'group',
-                    info: '公众号：连城出行'
+                    info: '客服QQ：3382767527'
                     //info: '公众号维护中'
                 }, {
                     iconName: 'place',

@@ -71,7 +71,6 @@ import axios from 'axios'
                     }).then(resp => {
                         if (resp.data.code === 0) {
                             alert('提交成功，我们将尽快与你联系');
-
                         } else {
                             alert('提交失败，请确保正确性与完整性！');
                         }
