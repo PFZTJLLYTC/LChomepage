@@ -69,7 +69,7 @@ export default {
             padding: $M-contentMargin
         @media only screen and ( min-width : 1180px )
             padding: 0
-        .twoPlatformModule
+        .twoPlatformDriverModule
             +REM-margin-TB( $M-contentMargin )
             .moduleBox__iconImg
                 +flexCenter--inline

@@ -17,9 +17,9 @@
                 width="100" tablet="100" desktop="50"
             )
                 .moduleBox__iconImg( v-bind:style="{ borderRadius: '50%' }" )
-                    img( v-bind:src="item.iconImg" v-bind:style="{ width: '50%' }" )
+                    img( v-bind:src="item.iconImg" v-bind:style="{ width: '80%' }" )
                 .moduleBox__info
-                    h3 {{ item.title }} <a href = "#">安卓端</a> 和<a href = "http://www.liancheng2019.cn/login.html">电脑端</a>
+                    h3 {{ item.title }}
                     p {{ item.subTitle }}
                     a( v-bind:href="item.download" ) {{ item.word }}
 
@@ -87,7 +87,7 @@ export default {
             padding: $M-contentMargin
         @media only screen and ( min-width : 1180px )
             padding: 0
-        .twoPlatformModule
+        .platformModule
             +REM-margin-TB( $M-contentMargin )
             .moduleBox__iconImg
                 +flexCenter--inline
@@ -115,7 +115,7 @@ export default {
                 +fontStyle( $F-text, $C-text, 1.5 )
 
 // 媒体查询 - 两大平台
-.mediaQuery--twoPlatformModule
+.mediaQuery--platformModule
    +REM( padding, $M-contentMargin )
    @media only screen and ( min-width : 1024px )
        +textCenter
@@ -137,14 +137,14 @@ export default {
            +REM( margin-left, $M-contentMargin )
            +REM( max-width, 260px )
            >h3
-               +REM( font-size, $F-info )
+               +REM( font-size, $F-info*.9 )
                color: $C-title
            >p
                +REM( font-size, $F-text*.7 )
                color: $C-text
        @media only screen and ( min-width : 768px )
            >h3
-               +REM( font-size, $F-title )
+               +REM( font-size, $F-title*.9 )
                color: $C-title
            >p
                +REM( font-size, $F-text )
@@ -153,7 +153,7 @@ export default {
            +block
            margin: 0 auto
            >h3
-               +REM( font-size, $F-sub-bigTitle )
+               +REM( font-size, $F-sub-bigTitle*.9 )
                color: $C-title
            >p
                +REM( font-size, $F-text )

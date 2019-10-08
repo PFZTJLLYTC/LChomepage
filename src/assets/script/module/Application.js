@@ -84,19 +84,20 @@ const platformObj = {
     },
     idName: 'twoPlatform-anchor',
     contentInfo: [
-        // {
-        //     title: 'iOS App',
-        //     subTitle: 'iPhone、iPad多终端类型，适应市面上所有分辨率',
-        //     iconImg: require('../../img/ico-iphone-140-px-b-l-u-e@3x.png'),
-        //     download: '',
-        //     word: '跳转下载'
-        // },
          {
-            title: '暂只支持',
-            subTitle: '包含手机、PAD两种终端，适配市面上所有主流分辨率',
-            iconImg: require('../../img/ico-android-140-px-b-l-u-e@3x.png'),
-            download: 'http://www.liancheng8102.cn/liancheng/download/LCMan.apk',
-            word: '点我下载'
+             title: 'Android',
+             subTitle: '包含手机、PAD两种终端，适配市面上所有主流分辨率',
+             iconImg: require('../../img/ico-android-140-px-b-l-u-e@3x.png'),
+             download: 'http://www.liancheng8102.cn/liancheng/download/LCMan.apk',
+             word: '点我下载'
+
+         },
+        {
+            title: 'PC端',
+            subTitle: '适配市面上主流浏览器',
+            iconImg: require('../../img/ico-w-e-b-s-i-t-e-140-px@3x.png'),
+            download: 'http://www.liancheng2019.cn/login.html',
+            word: '跳转'
         }
     ]
 };
