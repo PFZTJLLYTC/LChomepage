@@ -4,7 +4,7 @@
         mu-col(
             v-for="item in contactUsArr" v-bind:key="item.iconName"
             class="contactUS--box mediaQuery--contactUs--info"
-            width="100" tablet="100" desktop="33"
+            width="100" tablet="100" desktop="25"
         )
             .contactUS--text
                 i( class="mu-icon material-icons" ) {{ item.iconName }}
@@ -21,9 +21,12 @@ export default {
                     //info: 'liancheng.a.2019@gmail.com'
                     info: 'leodpen@gmail.com'
                 }, {
-                    iconName: 'group',
+                    iconName: 'person_add',
                     info: '客服QQ：3382767527'
                     //info: '公众号维护中'
+                }, {
+                    iconName: 'group',
+                    info: '公众号：连城出行'
                 }, {
                     iconName: 'place',
                     info: '上海市普陀区中山北路3663号'
