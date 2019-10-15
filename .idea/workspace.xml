@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66f30b18-f1a8-476b-b852-16c72ca2c920" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/assets/script/module/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BigData.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BigData.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ECommerce.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ECommerce.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +15,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="44" />
-    <option name="y" value="-14" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
   </component>
   <component name="ProjectId" id="1RvJIT5jtaSWNNMvXsQTnV1xQtd" />
   <component name="ProjectLevelVcsManager">
@@ -78,6 +70,9 @@
       <workItem from="1565767228583" duration="82000" />
       <workItem from="1565789674554" duration="1800000" />
       <workItem from="1570541557534" duration="319000" />
+      <workItem from="1571047173593" duration="470000" />
+      <workItem from="1571048074268" duration="4478000" />
+      <workItem from="1571056626989" duration="115000" />
     </task>
     <servers />
   </component>
@@ -89,7 +84,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
