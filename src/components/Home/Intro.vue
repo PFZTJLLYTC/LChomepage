@@ -87,13 +87,13 @@ export default {
                     itemColor   : '#0066cc',
                     itemImgSrc  : require('../../assets/img/userApp5.jpg'),
                     itemTitle   : `行程界面`,
-                    itemText    : `用户可直接查看订单信息以及自己的行程情况，以便做出更好的出行计划，也可与司机联系商谈一些细节要求。`
+                    itemText    : `用户可直接查看订单信息以及自己的行程情况，以便做出更好的出行计划，也可与司机联系交流细节以决定是否乘车。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#0066cc',
                     itemImgSrc  : require('../../assets/img/userApp3.jpg'),
                     itemTitle   : `消息界面`,
-                    itemText    : `用于查看订单处理情况，主要由线路管理员处理订单后推送信息给用户，以便用户能及时了解自己订单的处理情况。`
+                    itemText    : `用于查看订单处理情况，主要由线路服务管理员处理订单后推送信息给用户，以便用户能及时了解自己订单的处理情况。`
                 }
             ],
             userApp: UserAppModule,
@@ -102,26 +102,26 @@ export default {
                     imgLeft     : true,
                     itemColor   : '#0099cc',
                     itemImgSrc  : require('../../assets/img/driverApp21.jpg'),
-                    itemTitle   : `司机信息界面`,
-                    itemText    : `司机个人信息修改、历史订单查看、车上可用座位数量设置以及客服服务。`
+                    itemTitle   : `车主信息界面`,
+                    itemText    : `车主个人信息修改、历史订单查看、车上可用座位数量设置以及客服服务。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#0099cc',
                     itemImgSrc  : require('../../assets/img/driverApp22.jpg'),
-                    itemTitle   : `司机状态修改`,
-                    itemText    : `司机通过修改状态来灵活使用自己的工作时间，也方便线路服务管理员对司机的任务分配。`
+                    itemTitle   : `车主状态修改`,
+                    itemText    : `车主通过修改状态来灵活使用自己的工作时间，也方便线路服务管理员对司机的任务分配。`
                 },{
                     imgLeft     : true,
                     itemColor   : '#0099cc',
                     itemImgSrc  : require('../../assets/img/driverApp23.jpg'),
                     itemTitle   : `总订单查看`,
-                    itemText    : `司机可查看自己往期订单以及现在正在进行的订单，提供关键记录，便于司机的日常使用。`
+                    itemText    : `车主可查看自己往期订单以及现在正在进行的订单，提供关键记录，便于其的日常使用。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#0099cc',
                     itemImgSrc  : require('../../assets/img/driverApp24.jpg'),
-                    itemTitle   : `司机主要信息`,
-                    itemText    : `当司机有车型更换或者车牌更换时，修改此处可以同步修改服务管理员和用户的订单信息，以便于更好的工作处理。`
+                    itemTitle   : `车主主要信息`,
+                    itemText    : `当车主有车型更换或者车牌更换时，修改此处可以同步修改服务管理员和用户的订单信息，以便于更好的工作处理。`
                 }
             ],
             driverApp: DriverAppModule,
@@ -131,25 +131,25 @@ export default {
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager22.png'),
                     itemTitle   : `订单处理界面`,
-                    itemText    : `服务管理员系统的主要功能，用于分发订单给司机，快速处理订单，不再需要电话联系等延时信息处理。`
+                    itemText    : `服务管理员系统的主要功能，用于分发订单给司机，快速处理订单；更建议于移动app使用。`
                 },{
                     imgLeft     : false,
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager21.png'),
                     itemTitle   : `其它信息`,
-                    itemText    : `订单记录总结以及公司概况，还有客服、推送等的处理。`
+                    itemText    : `订单记录总结以及线路概况，还有客服、推送等的处理。`
                 }, {
                     imgLeft     : true,
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager23.png'),
                     itemTitle   : `司机登记验证`,
-                    itemText    : `司机正常处理订单需经过对应线路的服务管理员的审核即身份验证后，确保其信息是否正确，才能正常使用连城的司机App。`
+                    itemText    : `司机正常处理订单需经过对应线路的服务管理员的审核通过后，才能正常使用连城的车主App；且服务管理员有权利删除不称职者。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager24.png'),
                     itemTitle   : `所有订单记录`,
-                    itemText    : `历史所有订单的记录，提供概况，便于服务管理员对工作的总体情况查看，以便下一步业务的展开。`
+                    itemText    : `历史所有订单的记录，提供概况，便于服务管理员对线路当月的总体情况查看。`
                 }
             ],
             manager: ManagerModule

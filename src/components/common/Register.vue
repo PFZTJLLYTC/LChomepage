@@ -27,7 +27,7 @@ import axios from 'axios'
         export default {
             data() {
                 return {
-                    formTitle: `       申请添加你所管理的线路`,
+                    formTitle: `       申请成为新线路或已有线路的管理员`,
                     registerForm: {
                         man_name: '',
                         lineName: '',

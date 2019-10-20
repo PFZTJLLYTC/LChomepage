@@ -56,7 +56,7 @@ export default {
                         {
                             text: `人线对应、即时延时消息通知，`
                         }, {
-                            text: `自定义状态，`
+                            text: `自定义状态、自定义出行`
                         }, {
                             text: `简与用兼顾...`
                         }
@@ -67,11 +67,11 @@ export default {
                     url     : 'ECommerce',
                     textArr: [
                         {
-                            text: `网页管理、可实现移动化办公，`
+                            text: `网页管理与移动管理结合，`
                         }, {
                             text: `年、月、日数据分析，`
                         }, {
-                            text: `多线路合作通道...`
+                            text: `移动办公、可"一心多用"...`
                         }
                     ]
                 }, {
@@ -80,11 +80,11 @@ export default {
                     url     : 'SystemIntegration',
                     textArr: [
                         {
-                            text: `加盟或反馈、`
+                            text: `问题反馈、共同开发`
                         }, {
                             text: `商业投放与推广，`
                         }, {
-                            text: `其他定制需求...`
+                            text: `其他合作...`
                         }
                     ]
                 }
