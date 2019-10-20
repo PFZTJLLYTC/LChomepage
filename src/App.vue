@@ -39,14 +39,13 @@ export default {
                     // 判断页面状态: 如果是 'Home' -> 执行 首页导航滚动监听事件
                     if( viewUrlState === 'Home' ) {
                         // 判断 滚动值的范围( 修正距离: 不比分要触碰顶部时 进行切换; 减400px )
-                        //暂时未修改
-                        if( yValue>=1000 && yValue<2300 ) {
+                        if( yValue>=1000 && yValue<4700 ) {
                             this.cacheMethodsState( '服务简介', 2 )
-                        } else if( yValue>=2300 && yValue<3200 ) {
+                        } else if( yValue>=4700 && yValue<5500 ) {
                             this.cacheMethodsState( '获取服务', 3 )
-                        } else if( yValue>=3200 && yValue<3500 ) {
+                        } else if( yValue>=5500 && yValue<5800 ) {
                             this.cacheMethodsState( '关于我们', 4 )
-                        } else if( yValue>=3500 ) {
+                        } else if( yValue>=5800 ) {
                             this.cacheMethodsState( '联系我们', 5 )
                         }
                     }

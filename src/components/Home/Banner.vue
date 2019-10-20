@@ -1,10 +1,11 @@
 <template lang="pug">
 .banner( v-bind:style=" { backgroundImage: 'url( ' + bannerBcImg + ' )', backgroundSize: 'cover' } " )
     .banner--title
-        h2.whileColor 为城际服务提供集成化
+        h2.whileColor 城际顺风车集成化服务与
         h2.themeColor 管理平台
-        p.whileColor 多线路入驻与集成化 · 服务横向拓展
+        p.whileColor 多线路管理与集成化 · 服务横向拓展
         p.whileColor 便民出行 · 更简化管理
+        p.whileColor 共享经济 · 顺风车
 </template>
 
 <script>

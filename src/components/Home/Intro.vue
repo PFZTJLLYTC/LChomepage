@@ -109,7 +109,7 @@ export default {
                     itemColor   : '#0099cc',
                     itemImgSrc  : require('../../assets/img/driverApp22.jpg'),
                     itemTitle   : `司机状态修改`,
-                    itemText    : `司机通过修改状态来灵活使用自己的工作时间，也方便线路管理人对司机的任务分配。`
+                    itemText    : `司机通过修改状态来灵活使用自己的工作时间，也方便线路服务管理员对司机的任务分配。`
                 },{
                     imgLeft     : true,
                     itemColor   : '#0099cc',
@@ -121,7 +121,7 @@ export default {
                     itemColor   : '#0099cc',
                     itemImgSrc  : require('../../assets/img/driverApp24.jpg'),
                     itemTitle   : `司机主要信息`,
-                    itemText    : `当司机有车型更换或者车牌更换时，修改此处可以同步管理人和用户的订单信息，以便于更好的工作处理。`
+                    itemText    : `当司机有车型更换或者车牌更换时，修改此处可以同步修改服务管理员和用户的订单信息，以便于更好的工作处理。`
                 }
             ],
             driverApp: DriverAppModule,
@@ -131,7 +131,7 @@ export default {
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager22.png'),
                     itemTitle   : `订单处理界面`,
-                    itemText    : `管理员系统的主要功能，用于分发订单给司机，快速处理订单，不再需要电话联系等延时信息处理。`
+                    itemText    : `服务管理员系统的主要功能，用于分发订单给司机，快速处理订单，不再需要电话联系等延时信息处理。`
                 },{
                     imgLeft     : false,
                     itemColor   : '#336699',
@@ -143,13 +143,13 @@ export default {
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager23.png'),
                     itemTitle   : `司机登记验证`,
-                    itemText    : `司机正常处理订单需经过线路管理员的审核即身份验证后，确保其信息是否正确，才能正常使用连城的司机App。`
+                    itemText    : `司机正常处理订单需经过对应线路的服务管理员的审核即身份验证后，确保其信息是否正确，才能正常使用连城的司机App。`
                 }, {
                     imgLeft     : false,
                     itemColor   : '#336699',
                     itemImgSrc  : require('../../assets/img/manager24.png'),
                     itemTitle   : `所有订单记录`,
-                    itemText    : `历史所有订单的记录，提供概况，便于管理员对工作的总体情况查看，以便下一步业务的展开。`
+                    itemText    : `历史所有订单的记录，提供概况，便于服务管理员对工作的总体情况查看，以便下一步业务的展开。`
                 }
             ],
             manager: ManagerModule

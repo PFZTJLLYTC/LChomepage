@@ -63,7 +63,7 @@ export default {
                     ]
                 }, {
                     img     : require('../../assets/img/guanliyuan.png'),
-                    title   : '管理员入口',
+                    title   : '服务管理员入口',
                     url     : 'ECommerce',
                     textArr: [
                         {

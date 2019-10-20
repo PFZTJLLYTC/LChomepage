@@ -26,7 +26,7 @@
                         span.mobile--title 连城
                 // PC - 右侧
                 mu-col( class="pc--header--box" desktop="60" )
-                    mu-paper
+                    .mu-paper
                         mu-bottom-nav( v-bind:value="bottomNav" @change="handleChange" )
                             mu-bottom-nav-item( value="HOME-anchor"         title="HOME"       )
                             mu-bottom-nav-item( value="intro-anchor"        title="服务简介"    )

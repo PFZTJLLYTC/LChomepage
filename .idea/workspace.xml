@@ -3,6 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="66f30b18-f1a8-476b-b852-16c72ca2c920" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/module/ECommerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/ECommerce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/module/Manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/Manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/module/UserApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/UserApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/AboutUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/AboutUs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/AppBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Banner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Banner.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Intro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Intro.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Service.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Service.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +34,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Shangchao-Website" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -73,11 +84,24 @@
       <workItem from="1571047173593" duration="470000" />
       <workItem from="1571048074268" duration="4478000" />
       <workItem from="1571056626989" duration="115000" />
+      <workItem from="1571137493691" duration="283000" />
+      <workItem from="1571566250110" duration="3107000" />
+      <workItem from="1571569458902" duration="2713000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
