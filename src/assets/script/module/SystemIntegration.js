@@ -1,20 +1,5 @@
 const SystemIntegrationModule = [
-     /*{
-        imgLeft: false,
-        title: '智能仓储',
-        backgroundColor: '#EAEAEA',
-        infoText: `将物联网RFID技术及各种智能设备应用到仓储管理过程中的入库、
-                    堆放、盘点、出库等关键步骤，提高其仓储管理的智能化`,
-        imgUrl: require('../../img/pic-detail-4-2@3x.png')
-    }, {
-        imgLeft: true,
-        title: '无线视频',
-        backgroundColor: '#6F61B6',
-        infoText: `通过3G、4G等无线技术，突破地域限制，将视频信息接入服务器，
-                    并提供APP、PC等多种渠道调阅查看，
-                    可大量用于建筑施工现场管理等`,
-        imgUrl: require('../../img/pic-detail-4-3@3x.png')
-    }, */{
+     {
         imgLeft: false,
         title: '新媒体',
         backgroundColor: '#EAEAEA',

@@ -1,4 +1,3 @@
-
 const serviceObj = {
     name: '获取服务',
     backgroundColor: '#F5F5F5',
@@ -35,63 +34,6 @@ const introObj = {
         color: '#555555'
     },
     idName: 'intro-anchor'
-};
-
-const worksObj = {
-    name: '行业方案',
-    backgroundColor: '#F5F5F5',
-    title: [
-        {
-            text: '行业',
-            color: '#333'
-        }, {
-            text: '方案',
-            color: '#333'
-        }
-    ],
-    subTitle: {
-        text: 'WHAT WE SOLVE',
-        color: '#555555'
-    },
-    idName: 'works-anchor'
-};
-
-const teamObj = {
-    name: '团队介绍',
-    backgroundColor: '#FFF',
-    title: [
-        {
-            text: '团队',
-            color: '#333'
-        }, {
-            text: '介绍',
-            color: '#333'
-        }
-    ],
-    subTitle: {
-        text: 'OUR TEAM',
-        color: '#555555'
-    },
-    idName: 'team-anchor'
-};
-
-const joinUsObj = {
-    name: '招贤纳士',
-    title: [
-        {
-            text: '招贤',
-            color: '#FFF'
-        }, {
-            text: '纳士',
-            color: '#FFF'
-        }
-    ],
-    subTitle: {
-        text: 'JOIN US',
-        color: '#FFF'
-    },
-    idName: 'joinUs-anchor',
-    bgImg: require('../../img/bg.png')
 };
 
 const contactUsObj = {
@@ -150,4 +92,4 @@ const registerObj = {
     idName: 'register-anchor'
 };
 
-export {serviceObj, introObj, worksObj, teamObj, joinUsObj, contactUsObj, aboutUsObj,registerObj };
+export {serviceObj, introObj, contactUsObj, aboutUsObj,registerObj };

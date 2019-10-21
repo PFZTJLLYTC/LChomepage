@@ -4,15 +4,113 @@
     <list default="true" id="66f30b18-f1a8-476b-b852-16c72ca2c920" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/script/module/ECommerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/ECommerce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/script/module/Manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/Manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/script/module/UserApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/UserApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/AboutUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/AboutUs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/AppBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/AppBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Banner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Banner.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Intro.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Intro.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Service.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Service.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/application-bgbanner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/bigData-bgbanner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/comiis_siji.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/comiis_siji.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/group-17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px-coder@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px-dajian@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px-plus@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px-professional@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px-template-copy@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px-template@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px@3x(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px@3x(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px@3x(3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-android-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-appshop-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-barcode-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-c-m-m-i-30-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-c-r-m-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-card-140-px-copy@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-card-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-e-r-p-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-gylwl-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-h-t-m-l-5-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-html-5-100-copy@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-html-5-100@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-hunhe-100@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-iphone-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-manager-30-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-o-a-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-quotation@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-s-h-o-p-p-i-n-g-30-p-x@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-sjfx-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-sjpt-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-software-30-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-tcsc-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-tool-30-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-w-e-b-s-i-t-e-140-px@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/img/ico-w-e-b-s-i-t-e-140-px@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-webshop-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-wechat-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-weishop-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-windows-140-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-xdlc-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-yuansheng-100@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico-zhcc-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico3-1-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico3-2-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico3-3-zhcc-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico3-4-gylwl-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico3-5-ssxj-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico3-6-sheld-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico3-7-spjk-48-px@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico4-1-48-px@3x (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico4-1-48-px@3x (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico4-1-48-px@3x (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/ico4-1-48-px@3x (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (17).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (19).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/industries (9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-3@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-4@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-detail-3-2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-detail-3-3@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-detail-3-4@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-detail-3-5@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-detail-4-2@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/pic-detail-4-3@3x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/works_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/works_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/works_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/works_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/img/works_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/module/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/Application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/module/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/script/module/SystemIntegration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/script/module/SystemIntegration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/ContactUs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/ContactUs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Team.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/Works.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/DetailBanner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/DetailBanner.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Application.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Application.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/BigData.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BigData.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ECommerce.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ECommerce.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SystemIntegration.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SystemIntegration.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +184,8 @@
       <workItem from="1571056626989" duration="115000" />
       <workItem from="1571137493691" duration="283000" />
       <workItem from="1571566250110" duration="3107000" />
-      <workItem from="1571569458902" duration="2713000" />
+      <workItem from="1571569458902" duration="3239000" />
+      <workItem from="1571634088904" duration="4413000" />
     </task>
     <servers />
   </component>

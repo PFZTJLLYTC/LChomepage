@@ -12,7 +12,7 @@
     .moduleBox( v-bind:style="{ backgroundColor: aboutUsModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="aboutUsModule" )
         AboutUs
-    .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
+    .moduleBox( v-bind:style="{ backgroundColor: contactUsModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="contactUsModule" )
         ContactUs
 </template>
@@ -28,7 +28,7 @@ import AboutUs      from '../components/Home/AboutUs'           // 关于我们
 import Server       from '../components/Home/Service'           // 提供服务
 import Intro        from '../components/Home/Intro'             // 服务简介
 
-import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, contactUsObj }    from '../assets/script/module/Home'
+import { aboutUsObj, serviceObj, introObj, contactUsObj }    from '../assets/script/module/Home'
 const components = { TitleBox, AppBar, Banner, ContactUs,Server, Intro, AboutUs }
 
 export default {
@@ -37,14 +37,9 @@ export default {
         return {
             serviceModule: serviceObj,
             introModule: introObj,
-            worksModule: worksObj,
-            teamModule: teamObj ,
             aboutUsModule: aboutUsObj,
             contactUsModule: contactUsObj
         }
-    },
-    mounted: function() {
-        this.$updateViewUrlState( 'Home' )   // 更新 路由url状态
     },
     components: components
 }

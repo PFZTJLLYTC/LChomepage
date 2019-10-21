@@ -11,7 +11,7 @@ export default {
     props: ['DetailBanner'],
     data() {
         return {
-            bannerBcImg: require('../../assets/img/banner.jpg')
+            bannerBcImg: require('../../assets/img/thebanner.jpg')
         }
     }
     ,methods: {

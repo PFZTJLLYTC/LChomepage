@@ -1,4 +1,4 @@
-// '电商网站'
+// 服务管理员入口
 <template lang="pug">
 #ECommerce
     DetailAppBar
@@ -23,7 +23,7 @@
                     p {{ item.subTitle }}
                     a( v-bind:href="item.download" ) {{ item.word }}
 
-    .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
+    .moduleBox( v-bind:style="{ backgroundColor: contactUsModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="contactUsModule" )
         ContactUs
 </template>
@@ -38,7 +38,7 @@ import Register from '../components/common/Register'
 
 import { ECommerceModule }  from '../assets/script/module/ECommerce.js'
 import { platformObj }    from '../assets/script/module/Application'
-import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, contactUsObj, registerObj }    from '../assets/script/module/Home'
+import { aboutUsObj, serviceObj, introObj, contactUsObj, registerObj }    from '../assets/script/module/Home'
 const components = { DetailAppBar, DetailBanner, DetailContent, TitleBox, ContactUs, Register }
 
 export default {
@@ -56,17 +56,11 @@ export default {
             eCommerceArr: ECommerceModule,
             serviceModule: serviceObj,
             introModule: introObj,
-            worksModule: worksObj,
-            teamModule: teamObj ,
             aboutUsModule: aboutUsObj,
             contactUsModule: contactUsObj,
             registerModule: registerObj,
             platformModule: platformObj
         }
-    },
-    mounted: function() {
-        this.$updateViewUrlState( 'ECommerce' );            // 更新 路由url状态
-        this.$toDetailTop();                                // 初始页面滚动到页面顶部
     },
     components: components
 }

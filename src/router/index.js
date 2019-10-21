@@ -36,5 +36,5 @@ export default new Router({
             name: 'SystemIntegration',
             component: SystemIntegration
         }
-    ]
+    ],
 });

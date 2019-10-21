@@ -37,14 +37,6 @@ export default {
             multiLineInput             : '',
             multiLineInputErrorText    : ''
         }
-    },
-    methods: {
-        handleInputOverflow (isOverflow) {
-            this.inputErrorText = isOverflow ? '超过！' : ''
-        },
-        handleMultiLineOverflow (isOverflow) {
-            this.multiLineInputErrorText = isOverflow ? '超过！' : ''
-        }
     }
 }
 </script>

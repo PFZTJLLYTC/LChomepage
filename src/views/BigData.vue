@@ -1,4 +1,4 @@
-// '大数据平台建设'
+// 车主入口
 <template lang="pug">
 #BigData
     DetailAppBar
@@ -46,10 +46,6 @@ export default {
             bigDataArr: BigDataModule,
             twoPlatformDriverModule: twoPlatformDriverObj
         }
-    },
-    mounted: function() {
-        this.$updateViewUrlState( 'BigDate' );              // 更新 路由url状态
-        this.$toDetailTop();                                // 初始页面滚动到页面顶部
     },
     components: components
 }

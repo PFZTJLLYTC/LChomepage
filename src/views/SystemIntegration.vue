@@ -1,10 +1,10 @@
-// '系统集成'
+// 其他合作
 <template lang="pug">
 #System-Integration
     DetailAppBar
     DetailBanner( v-bind:DetailBanner="bannerInfo" )
     DetailContent( v-bind:DetailContentProps="systemIntegrationArr" )
-    .moduleBox( v-bind:style="{ backgroundColor: teamModule.backgroundColor }" )
+    .moduleBox( v-bind:style="{ backgroundColor: contactUsModule.backgroundColor }" )
         TitleBox( v-bind:titleInfo="contactUsModule" )
         ContactUs
 </template>
@@ -17,7 +17,7 @@ import ContactUs    from '../components/Home/ContactUs'
 import TitleBox     from '../components/common/TitleBox'
 
 import { SystemIntegrationModule }  from '../assets/script/module/SystemIntegration'
-import { aboutUsObj, serviceObj, introObj, worksObj, teamObj, contactUsObj }    from '../assets/script/module/Home'
+import { aboutUsObj, serviceObj, introObj, contactUsObj }    from '../assets/script/module/Home'
 const components = { DetailAppBar, DetailBanner, DetailContent, TitleBox, ContactUs }
 export default {
 	name: 'SystemIntegration',
@@ -34,15 +34,9 @@ export default {
 			systemIntegrationArr: SystemIntegrationModule,
             serviceModule: serviceObj,
             introModule: introObj,
-            worksModule: worksObj,
-            teamModule: teamObj ,
             aboutUsModule: aboutUsObj,
             contactUsModule: contactUsObj
 		}
-	},
-	mounted: function() {
-		this.$updateViewUrlState( 'SystemIntegration' );    // 更新 路由url状态
-		this.$toDetailTop();                                // 初始页面滚动到页面顶部
 	},
 	components: components
 }

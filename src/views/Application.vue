@@ -1,4 +1,4 @@
-// 'APP应用'
+// 用户入口
 <template lang="pug">
 #Application( v-bind:style="{ backgroundColor: '#67b5c2' }" )
     DetailAppBar
@@ -43,10 +43,6 @@ export default {
             },
             twoPlatformModule: twoPlatformObj
         }
-    },
-    mounted: function() {
-        this.$updateViewUrlState( 'Application' );          // 更新 路由url状态
-        this.$toDetailTop();                                // 初始页面滚动到页面顶部
     },
     components: components
 }
