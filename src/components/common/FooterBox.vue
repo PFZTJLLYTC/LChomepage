@@ -1,7 +1,6 @@
 <template >
     <footer>
         <p>Copyright © 2018-2019 LC(连城) All Rights Reserved</p>
-        <p2>蜀ICP备19002737号</p2>
     </footer>
 </template>
 
